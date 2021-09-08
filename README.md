@@ -2,7 +2,7 @@
 
 ## Overview of this Repository
 
-This repository is used for the development of the National National Human Settlement Layer (NHSL), which is a collection of thematic datasets that describe the physical, social and economic characteristics of urban centres and rural/remote communities across Canada, and their vulnerability to natural hazards of concern.  Detailed information on land use, buildings, people and capital assets are provided at the Census Dissemination Area administrative level for more than 454,000 settled areas across Canada.  
+This repository is used for the development of the National National Human Settlement Layer (NHSL), which is a collection of thematic datasets that describe the physical, social and economic characteristics of urban centres and rural/remote communities across Canada.  Detailed information on land use, buildings, people and capital assets are provided at the Census Dissemination Area administrative level for more than 454,000 settled areas across Canada.  
 
 The [Physical Exposure Layer](https://github.com/OpenDRR/national-human-settlement/tree/main/physical-exposure) includes a delineation of human settlement areas and related functional land use classes across Canada, and provides detailed information on construction type, occupancy and design level of more than 9.1 million buildings; population dynamics at different times of day for 35.1 million people, and; capital asset valuation of buildings and contents totaling more than 8.3 trillion CAD$. 
 
