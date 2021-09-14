@@ -12,8 +12,8 @@ Bien que développé pour soutenir les évaluations quantitatives des risques et
 
 ### Ensembles de données disponibles
 
-- Couche d'exposition physique] (https://github.com/OpenDRR/national-human-settlement/tree/main/physical-exposure)
-- Couche de tissu social] (https://github.com/OpenDRR/national-human-settlement/tree/main/social-fabric)
+- [Couche d'exposition physique] (https://github.com/OpenDRR/national-human-settlement/tree/main/physical-exposure)
+- [Couche de tissu social] (https://github.com/OpenDRR/national-human-settlement/tree/main/social-fabric)
 
 ### Utilisation technique
 
