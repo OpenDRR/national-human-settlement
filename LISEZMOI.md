@@ -1,3 +1,5 @@
+[In english](https://github.com/OpenDRR/national-human-settlement/blob/main/README.md)
+
 Traduit avec www.DeepL.com/Translator (version gratuite)
 
 # La couche des zones de peuplement au niveau national
