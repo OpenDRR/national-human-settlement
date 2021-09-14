@@ -1,3 +1,7 @@
+<p align="center">
+  <img width="500" alt="status-under-review" src="https://user-images.githubusercontent.com/2255248/133334573-a1b6f9d5-1d6a-427c-952f-0fbe7faf4c89.png">
+</p>
+
 [En français](https://github.com/OpenDRR/national-human-settlement/blob/main/LISEZMOI.md)
 
 # National Human Settlement Layer
