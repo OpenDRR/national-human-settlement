@@ -1,3 +1,5 @@
+[En français](https://github.com/OpenDRR/national-human-settlement/blob/main/physical-exposure/LISEZMOI.md)
+
 # National Human Settlement - Physical Exposure
 
 The Physical Exposure component of the National Human Settlement Layer (NHSL) includes a delineation of built-up areas and related functional land use classes for Census Dissemination Areas in urban centres and rural/remote communities across Canada. It provides detailed information on construction type, occupancy and design level for more than 9.1 million buildings; population dynamics at different times of day for 35.1 million people, and; capital asset valuation of buildings and contents totalling more than 8.3 trillion CAD$.
