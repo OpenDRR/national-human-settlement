@@ -1,4 +1,6 @@
-## La couche des zones de peuplement au niveau national
+Traduit avec www.DeepL.com/Translator (version gratuite)
+
+# La couche des zones de peuplement au niveau national
 
 ## Vue d'ensemble de ce référentiel
 
@@ -28,5 +30,3 @@ _insérer le texte sur l'utilisation acceptable_
 Si vous utilisez l'un de ces ensembles de données, veuillez inclure la référence à tout ouvrage cité dans la description de l'ensemble de données ainsi que la référence à l'ensemble de données lui-même. La citation suivante doit être utilisée :
 
 _insérer le texte d'attribution_
-
-Traduit avec www.DeepL.com/Translator (version gratuite)
