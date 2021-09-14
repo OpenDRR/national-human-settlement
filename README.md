@@ -1,3 +1,5 @@
+[En français](https://github.com/OpenDRR/national-human-settlement/blob/main/LISEZMOI.md)
+
 # National Human Settlement Layer
 
 ## Overview of this Repository
