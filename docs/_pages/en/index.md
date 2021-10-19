@@ -8,7 +8,7 @@ subject:
   fr: [GV Gouvernement et vie politique, Services gouvernementaux]
 title: Human Settlement and Natural Hazards in Canada
 lang: en
-altLangPage: ../fr/nhsl
+altLangPage: ../fr/index
 nositesearch: true
 nomenu: true
 nofooter: true

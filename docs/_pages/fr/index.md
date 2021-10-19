@@ -8,7 +8,7 @@ subject:
   fr: [GV Gouvernement et vie politique, Services gouvernementaux]
 title: Zones de peuplement et dangers naturels au Canada
 lang: fr
-altLangPage: ../en/nhsl
+altLangPage: ../en
 nositesearch: true
 nomenu: true
 nofooter: true
@@ -16,7 +16,7 @@ breadcrumbs:
   - title: "OpenDRR"
     link: "https://www.github.com/OpenDRR/"
   - title: "Téléchargements de OpenDRR"
-    link: "/fr"
+    link: "../data/fr"
   - title: "Zones de peuplement et dangers naturels au Canada"
 ---
 <link href='../assets/css/app.css' rel='stylesheet'/>
