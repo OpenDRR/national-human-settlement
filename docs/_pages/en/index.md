@@ -8,7 +8,7 @@ subject:
   fr: [GV Gouvernement et vie politique, Services gouvernementaux]
 title: Human Settlement and Natural Hazards in Canada
 lang: en
-altLangPage: ../fr/index
+altLangPage: ../fr
 nositesearch: true
 nomenu: true
 nofooter: true
@@ -16,7 +16,7 @@ breadcrumbs:
   - title: "OpenDRR"
     link: "https://www.github.com/OpenDRR/"
   - title: "OpenDRR Downloads"
-    link: "/en"
+    link: "../data/en"
   - title: "Human Settlement and Natural Hazards in Canada"
 ---
 <link href='../assets/css/app.css' rel='stylesheet'/>
