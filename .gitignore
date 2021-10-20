@@ -5,3 +5,5 @@ vendor/
 _site/
 .bundle/config
 Gemfile.lock
+/venv
+.env

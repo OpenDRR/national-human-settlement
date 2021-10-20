@@ -23,23 +23,23 @@ technical:
       Il est possible de télécharger des fichiers individuels à partir du Web, en cliquant sur "Raw" ou "Download" dans le coin supérieur droit de la page d'aperçu d'un fichier. Pour ceux qui souhaitent cloner ce dépôt, veuillez vous assurer que Git LFS est activé sur votre machine avant de procéder au clonage.
 documentation:
   en: |
-      insert documentation and/or links
+      _insert documentation and/or links_
   fr: |
-      insérer de la documentation et/ou des liens
+      _insérer de la documentation et/ou des liens_
 acceptable:
   en: |
-      insert acceptable use text
+      _insert acceptable use text_
   fr: |
-      insérer le texte sur l'utilisation acceptable
+      _insérer le texte sur l'utilisation acceptable_
 attribution:
   en: |
       If using any of these scenarios, please include reference to any works which are cited in the scenario descriptions as well as reference to the scenario catalogue itself. The following citation should be used:
 
-      insert attribution text
+      _insert attribution text_
   fr: |
       Si vous utilisez l'un de ces ensembles de données, veuillez inclure la référence à tout ouvrage cité dans la description de l'ensemble de données ainsi que la référence à l'ensemble de données lui-même. La citation suivante doit être utilisée :
 
-      insérer le texte d'attribution
+      _insérer le texte d'attribution_
 datasets:
 - title:
     en: Social Fabric and Capacity Thresholds
@@ -52,6 +52,7 @@ datasets:
         L’élément « Vulnérabilité sociale » de la couche ZPN comprend des renseignements sur les grandes tendances spatiales en matière de vulnérabilité sociale à l’échelle du quartier, ainsi que des indicateurs sur la capacité d’une collectivité à résister aux catastrophes, et à s’en rétablir, en fonction des caractéristiques intrinsèques du logement, de la structure familiale, de l’autonomie individuelle et des systèmes financiers.\n
         Les indicateurs de la vulnérabilité sociale et du seuil de capacité permettent de cerner les tendances sous-jacentes en matière de vulnérabilité sociale au sein d’une collectivité donnée. Le modèle comprend six indicateurs composites qui décrivent la vulnérabilité sociale totale estimée, ainsi que le niveau de vulnérabilité qui pourrait découler des conditions de logement, de la structure familiale, de l’autonomie individuelle et des systèmes financiers. Le modèle permet donc de comparer les niveaux relatifs de vulnérabilité d’une région à l’autre dans l’ensemble du Canada et de déterminer les quartiers dans lesquels la capacité de résister aux catastrophes, et de s’en rétablir, peut être restreinte.
   id: nhsl_social_fabric_indicators
+  folder: social-fabric
   map_layer: '4'
   map_type: esri_rest
   map_url:
@@ -191,6 +192,7 @@ datasets:
         Les menaces liées aux aléas sismiques sont évaluées au moyen des niveaux d’intensité des secousses telluriques survenant une fois tous les 2 500 ans mis au point par la Commission géologique du Canada pour évaluer les seuils minimaux des dommages aux bâtiments. Les menaces liées aux risques de feux de forêt sont évaluées au moyen des niveaux moyens d’intensité du front (IF) mis au point par le Service canadien des forêts pour évaluer les biens communautaires en danger. Les menaces liées aux coulées de débris sont basées sur un modèle de vulnérabilité aux glissements de terrain à variables multiples mis au point par la NASA dans le cadre d’un système mondial d’alerte rapide pour les événements déclenchés par les conditions météorologiques. Les menaces liées aux tsunamis, aux débordements de cours d’eau et aux vents violents sont basées sur les modèles de cyclone et inondations survenant 1 fois tous les 500 ans dans le cadre du Bilan mondial 2011 sur la réduction des risques de catastrophe des Nations Unies pour orienter les efforts de gestion des catastrophes à l’échelle régionale et nationale. La sensibilité à chacun des dangers est estimée en fonction du nombre de gens et de biens essentiels exposés au niveau des aires de diffusion du recensement.\n
         Les résultats sont regroupés dans un index des menaces liées à des dangers multiples pour aider à cerner les points chauds préoccupants dans l’ensemble du Canada.
   id: nhsl_hazard_threat_indicators
+  folder: hazard-threat
   map_layer: '6'
   map_type: esri_rest
   map_url:
@@ -406,6 +408,7 @@ datasets:
         Le nombre d’occupants des bâtiments à différents moments de la journée est estimé pour les trois périodes suivantes : le jour (de 9 h à 17 h), pendant les déplacements domicile-travail du matin et du soir (de 7 h à 9 h et de 17 h à 19 h) et la nuit, lorsque la majorité des gens sont à la maison (de 19 h à 7 h).\n
         La valeur en capital des biens immobiliers est fournie pour les éléments structurels et non structurels des bâtiments, ainsi que pour le contenu potentiel du bâtiment. La valeur des biens est estimée en fonction des coûts de remplacement de l’industrie pour des régions représentatives du Canada."
   id: nhsl_physical_exposure_indicators
+  folder: physical-exposure
   map_layer: '5'
   map_type: esri_rest
   map_url:
