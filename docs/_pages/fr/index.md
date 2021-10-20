@@ -21,15 +21,14 @@ breadcrumbs:
 ---
 <link href='../assets/css/app.css' rel='stylesheet'/>
 
-{% assign nhsl_set = site.data.nhsl.datasets | where: "id", "nhsl" %}
-{% assign nhsl_text = nhsl_set[0].description[page.lang] | split: '\n' %}
+{% assign nhsl_text = site.data.nhsl.description[page.lang] | split: '\n' %}
 {% assign para_text = nhsl_text | slice: 1, nhsl_text.size %}
 
 <p><strong>{{ nhsl_text[0] }}</strong></p>
 <div class="row">
   <div class="col-md-8">
     {% for paragraph in para_text %}
-      <p>{{ paragraph | replace: "Exposition physique", "<a href='#physical_exposure'>Exposition physique</a>" | replace: "Vulnérabilité sociale", "<a href='#social_fabric'>Vulnérabilité sociale</a>" }}</p>
+      <p>{{ paragraph | replace: "Exposition physique", "<a href='#nhsl_physical_exposure_indicators-a'>Exposition physique</a>" | replace: "Vulnérabilité sociale", "<a href='#nhsl_social_fabric_indicators-a'>Vulnérabilité sociale</a>" }}</p>
     {% endfor %}
     <!-- <p>La <a href='#risk_dynamics'>couche de la dynamique des risques</a> utilise l’information disponible sur la croissance de la population et les changements à l’utilisation des terres depuis 1975 pour évaluer comment l’évolution des tendances de l’urbanisation contribuent à aggraver les profils de risques naturels au fil du temps au Canada.</p> -->
     <section class="jumbotron">
@@ -43,12 +42,12 @@ breadcrumbs:
         <div class="panel-title">Ensembles de données</div>
       </div>
       <ul class="list-group">
+        {% for layer in site.data.nhsl.layers %}
         <li class="list-group-item">
-          <a href='#physical_exposure'>Couche de l’exposition physique</a>
+          {% assign text = site.data.nhsl.datasets | where: "id", layer %}
+          <a href='#{{ layer }}-a'>{{ text[0].title[page.lang] }}</a>
         </li>
-        <li class="list-group-item">
-          <a href='#social_fabric'>Couche du tissu social</a>
-        </li>
+        {% endfor %}
       </ul>
     </div>
     <div class="panel panel-primary">
@@ -69,68 +68,52 @@ breadcrumbs:
   </div>
 </div>
 
-<hr>
+{% assign variables = "'" %}
+{% for layer in site.data.nhsl.layers %}
 
-<a name="physical_exposure"></a>
+  {% assign variables = variables | append: layer | append: "', '" %}
+  {% assign layer_set = site.data.nhsl.datasets | where: "id", layer %}
+  {% assign layer_text = layer_set[0].description[page.lang] | split: '\n' %}
+  {% assign para_text = layer_text | slice: 1, layer_text.size %}
 
-## Exposition physique
+  <hr>
 
-{% assign phys_ex_set = site.data.nhsl.datasets | where: "id", "nhsl_physical_exposure_indicators" %}
-{% assign phys_ex_text = phys_ex_set[0].description[page.lang] | split: '\n' %}
-{% assign para_text = phys_ex_text | slice: 1, phys_ex_text.size %}
+  <a name="{{ layer }}-a"></a>
 
-<p>
-  <div class="card" style="float:left;margin:10px 20px 0px 0px;">
-    <img src="../assets/img/nhsl_physical_exposure.png" width="350" class="img-rounded img-responsive"/>
-    <div class="card-body">
-      <a href="nhsl_physical_exposure_map.html" class="btn btn-primary btn-lg btn-block mrgn-tp-sm" role="button"> Voir sur la carte </a>
+  <h2>{{ layer_set[0].title[page.lang] }}</h2>
+
+  <p>
+    <div class="card" style="float:left;margin:10px 20px 0px 0px;">
+      <img src="../assets/img/{{ layer }}.png" width="350" class="img-rounded img-responsive"/>
+      <div class="card-body">
+        <a href="{{ layer }}_map.html" class="btn btn-primary btn-lg btn-block mrgn-tp-sm" role="button"> Voir sur la carte </a>
+      </div>
     </div>
-  </div>
-  <strong>{{ phys_ex_text[0] }}</strong></p>
+    <strong>{{ layer_text[0] }}</strong>
+  </p>
 
-{% for paragraph in para_text %}
-  <p>{{ paragraph }}</p>
+  <div>
+  {% for paragraph in para_text %}
+    <p>{{ paragraph }}</p>
+  {% endfor %}
+  </div>
+
+  <h3>Ressources de données</h3>
+
+  <div id={{ layer }}>
+    {% include nhsl-resources.html lang = page.lang layer = layer %}
+  </div>
+
 {% endfor %}
 
-### Ressources de données
-
-<div id="nhsl_physical_exposure_indicators">
-  {% include nhsl-resources.html lang = page.lang layer = "nhsl_physical_exposure_indicators" %}
-</div>
-
-<hr>
-
-<a name="social_fabric"></a>
-
-## Tissu social et seuils de capacité
-
-{% assign soc_fab_set = site.data.nhsl.datasets | where: "id", "nhsl_social_fabric_indicators" %}
-{% assign soc_fab_text = soc_fab_set[0].description[page.lang] | split: '\n' %}
-{% assign para_text = soc_fab_text | slice: 1, soc_fab_text.size %}
-
-<p>
-  <div class="card" style="float:left;margin:10px 20px 0px 0px;">
-    <img src="../assets/img/nhsl_social_fabric.png" width="350" class="img-rounded img-responsive"/>
-    <div class="card-body">
-      <a href="nhsl_social_fabric_map.html" class="btn btn-primary btn-lg btn-block mrgn-tp-sm" role="button"> Voir sur la carte </a>
-    </div>
-  </div>
-  <strong>{{ soc_fab_text[0] }}</strong></p>
-
-{% for paragraph in para_text %}
-  <p>{{ paragraph }}</p>
-{% endfor %}
-
-### Ressources de données
-
-<div id="nhsl_social_fabric_indicators">
-  {% include nhsl-resources.html lang = page.lang layer = "nhsl_social_fabric_indicators" %}
-</div>
+{% assign var_length = variables.size | minus: 3 %}
+{% assign variables = variables | slice: 0, var_length %}
 
 <script src="https://code.jquery.com/jquery-1.12.2.min.js"
         integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
 
 <script src="../assets/js/app.js"></script>
 <script>
-  showProv( [ "nhsl_physical_exposure_indicators", "nhsl_social_fabric_indicators" ] );
+  let layers = [{{ variables }}];
+  showProv( layers );
 </script>

@@ -1,25 +1,49 @@
+id: nhsl
+title:
+  en: Human Settlement and Natural Hazards in Canada
+  fr: Zones de peuplement et dangers naturels au Canada
+description:
+  en: |
+      The National Human Settlement Layer (NHSL) is a collection of datasets that describe the physical and social characteristics of communities across Canada in the context of their vulnerability to natural hazards. Detailed information on land use, buildings, building asset values, people and community social vulnerability are provided at the approximate scale of neighbourhoods.\n
+      The Physical Exposure Layer component of the National Human Settlement Layer (NHSL) includes a delineation of settled areas and related land use across Canada, as well as information about buildings, persons, and capital value of buildings assets (structure and contents) within those areas.\n
+      The Social Vulnerability component of the National Human Settlement Layer (NHSL) includes information about broad spatial patterns of social vulnerability at the neighbourhood scale, and indicators about the capacities for a community to withstand and recover from disaster events based on intrinsic characteristics of housing, family structure, individual autonomy and financial agency.\n
+      These datasets have been developed to provide information about physical exposure and social vulnerability across Canada that can be used for quantitative risk assessment of natural hazards. The purpose is to support implementation of the Sendai Framework for Disaster Risk Reduction at the local, regional, and national scales. The information is not intended for use in site-specific studies.
+  fr: |
+      La couche des zones de peuplement au niveau national (couche ZPN) est une collection d’ensembles de données qui décrivent les caractéristiques physiques et sociales des collectivités de l’ensemble du Canada en fonction de leur vulnérabilité aux dangers naturels. Des renseignements détaillés sur l’utilisation du sol, les bâtiments, la valeur des biens immobiliers, la population et la vulnérabilité sociale des collectivités sont fournis à l’échelle approximative des quartiers.\n
+      L’élément Exposition physique de la couche ZPN délimite les régions habitées de l’ensemble du Canada et l’utilisation du sol dans ces régions, en plus d’inclure des renseignements sur les bâtiments, la population et la valeur en capital des biens immobiliers (structure et contenu).\n
+      L’élément Vulnérabilité sociale de la couche ZPN comprend des renseignements sur les grandes tendances spatiales en matière de vulnérabilité sociale à l’échelle du quartier, ainsi que des indicateurs sur la capacité d’une collectivité à résister aux catastrophes, et à s’en rétablir, en fonction des caractéristiques intrinsèques du logement, de la structure familiale, de l’autonomie individuelle et des systèmes financiers.\n
+      Ces ensembles de données ont été élaborés pour fournir des renseignements sur l’exposition physique et la vulnérabilité sociale à travers le Canada qui peuvent être utilisés pour l’évaluation quantitative des risques naturels. L’objectif de ces ensembles de données consiste à appuyer la mise en œuvre du Cadre de Sendai pour la réduction des risques de catastrophe à l’échelle locale, régionale et nationale. L’information n’est pas destinée à être utilisée dans le cadre d’études propres à des sites.
+layers:
+  - nhsl_physical_exposure_indicators
+  - nhsl_social_fabric_indicators
+technical:
+  en: |
+      It is possible to download individual files from the web, by clicking on either 'Raw' or 'Download' from the top right corner of a file preview page. For those wishing to clone this repository, please ensure you have Git LFS enabled on your machine prior to cloning.
+  fr: |
+      Il est possible de télécharger des fichiers individuels à partir du Web, en cliquant sur "Raw" ou "Download" dans le coin supérieur droit de la page d'aperçu d'un fichier. Pour ceux qui souhaitent cloner ce dépôt, veuillez vous assurer que Git LFS est activé sur votre machine avant de procéder au clonage.
+documentation:
+  en: |
+      insert documentation and/or links
+  fr: |
+      insérer de la documentation et/ou des liens
+acceptable:
+  en: |
+      insert acceptable use text
+  fr: |
+      insérer le texte sur l'utilisation acceptable
+attribution:
+  en: |
+      If using any of these scenarios, please include reference to any works which are cited in the scenario descriptions as well as reference to the scenario catalogue itself. The following citation should be used:
+
+      insert attribution text
+  fr: |
+      Si vous utilisez l'un de ces ensembles de données, veuillez inclure la référence à tout ouvrage cité dans la description de l'ensemble de données ainsi que la référence à l'ensemble de données lui-même. La citation suivante doit être utilisée :
+
+      insérer le texte d'attribution
 datasets:
-- collection:
-    en: Human Settlement and Natural Hazards in Canada
-    fr: Zones de peuplement et dangers naturels au Canada
-  description:
-    en: |
-        The National Human Settlement Layer (NHSL) is a collection of datasets that describe the physical and social characteristics of communities across Canada in the context of their vulnerability to natural hazards. Detailed information on land use, buildings, building asset values, people and community social vulnerability are provided at the approximate scale of neighbourhoods.\n
-        The Physical Exposure Layer component of the National Human Settlement Layer (NHSL) includes a delineation of settled areas and related land use across Canada, as well as information about buildings, persons, and capital value of buildings assets (structure and contents) within those areas.\n
-        The Social Vulnerability component of the National Human Settlement Layer (NHSL) includes information about broad spatial patterns of social vulnerability at the neighbourhood scale, and indicators about the capacities for a community to withstand and recover from disaster events based on intrinsic characteristics of housing, family structure, individual autonomy and financial agency.\n
-        These datasets have been developed to provide information about physical exposure and social vulnerability across Canada that can be used for quantitative risk assessment of natural hazards. The purpose is to support implementation of the Sendai Framework for Disaster Risk Reduction at the local, regional, and national scales. The information is not intended for use in site-specific studies.
-    fr: |
-        La couche des zones de peuplement au niveau national (couche ZPN) est une collection d’ensembles de données qui décrivent les caractéristiques physiques et sociales des collectivités de l’ensemble du Canada en fonction de leur vulnérabilité aux dangers naturels. Des renseignements détaillés sur l’utilisation du sol, les bâtiments, la valeur des biens immobiliers, la population et la vulnérabilité sociale des collectivités sont fournis à l’échelle approximative des quartiers.\n
-        L’élément Exposition physique de la couche ZPN délimite les régions habitées de l’ensemble du Canada et l’utilisation du sol dans ces régions, en plus d’inclure des renseignements sur les bâtiments, la population et la valeur en capital des biens immobiliers (structure et contenu).\n
-        L’élément Vulnérabilité sociale de la couche ZPN comprend des renseignements sur les grandes tendances spatiales en matière de vulnérabilité sociale à l’échelle du quartier, ainsi que des indicateurs sur la capacité d’une collectivité à résister aux catastrophes, et à s’en rétablir, en fonction des caractéristiques intrinsèques du logement, de la structure familiale, de l’autonomie individuelle et des systèmes financiers.\n
-        Ces ensembles de données ont été élaborés pour fournir des renseignements sur l’exposition physique et la vulnérabilité sociale à travers le Canada qui peuvent être utilisés pour l’évaluation quantitative des risques naturels. L’objectif de ces ensembles de données consiste à appuyer la mise en œuvre du Cadre de Sendai pour la réduction des risques de catastrophe à l’échelle locale, régionale et nationale. L’information n’est pas destinée à être utilisée dans le cadre d’études propres à des sites.
-  id: nhsl
-  title:
-    en: Human Settlement and Natural Hazards in Canada
-    fr: Zones de peuplement et dangers naturels au Canada
-- collection:
-    en: Human Settlement and Natural Hazards in Canada
-    fr: Zones de peuplement et dangers naturels au Canada
+- title:
+    en: Social Fabric and Capacity Thresholds
+    fr: Tissu social et seuils de capacité
   description:
     en: |
         The Social Vulnerability component of the National Human Settlement Layer (NHSL) includes information about broad spatial patterns of social vulnerability at the neighbourhood scale, and indicators about the capacities for a community to withstand and recover from disaster events based on intrinsic characteristics of housing, family structure, individual autonomy and financial agency.\n
@@ -154,66 +178,18 @@ datasets:
     name: Social Fabric and Capacity Thresholds (YT)
     region: yt
     type: Dataset
-  title:
-    en: Social Fabric and Capacity Thresholds
-    fr: Tissu social et seuils de capacité
-- collection:
-    en: Human Settlement and Natural Hazards in Canada
-    fr: Zones de peuplement et dangers naturels au Canada
+- title:
+    en: Natural Hazard Threats
+    fr: Dangers naturels
   description:
-    en: "The Natural Hazard Threat component of the National Human Settlement Layer\
-      \ (NHSL) extends capabilities of the physical exposure model to address the\
-      \ question of who and what are susceptible to natural hazards of concern in\
-      \ Canada.  It utilizes available national-level information on earthquake, flood,\
-      \ debris flow, wildfire, and severe wind hazards to evaluate the extent to which\
-      \ people and critical assets are situated in harm’s way (hazard exposure);\
-      \ and the potential for socioeconomic disruptions in those areas where hazard\
-      \ intensities are likely to exceed minimum thresholds of damage potential (hazard\
-      \ susceptibility). \nEarthquake hazard threats are assessed using 1/2500-year\
-      \ ground shaking intensity levels developed by the Geological Survey of Canada\
-      \ to evaluate minimum thresholds of building damage. Wildfire hazard threats\
-      \ are assessed using mean head fire intensity (HFI) levels developed by the\
-      \ Canadian Forest Service to evaluate community assets at risk. Debris Flow\
-      \ threats are based on a multi-variate landslide susceptibility model developed\
-      \ by NASA as part of a global early warning system for weather-triggered events.\
-      \ Tsunami, riverine flood and severe wind hazard threats are based on 1/500-year\
-      \ inundation and cyclone models developed as part of the 2011 Global Assessment\
-      \ Report on Disaster Risk Reduction (GAR) to inform disaster management efforts\
-      \ at regional and national scales. \nSusceptibility to individual hazards is\
-      \ estimated based on the numbers of people and critical assets exposed at the\
-      \ Census Dissemination Area level. The results are aggregated into a multi-hazard\
-      \ threat index to help identify hotspots of concern across Canada."
-    fr: "L’élément « menaces liées aux dangers naturels » de la couche\
-      \ des zones de peuplement au niveau national (couche ZPN) étend la capacité\
-      \ du modèle d’exposition physique à approfondir la question de savoir qui\
-      \ et quoi pourrait être affecté par des dangers naturels préoccupants au\
-      \ Canada. Il utilise l’information disponible au niveau national sur les tremblements\
-      \ de terre, les inondations, les coulées de débris, les feux de forêt et\
-      \ les dangers liés aux vents violents pour évaluer dans quelle mesure les\
-      \ gens et les biens essentiels se trouvent en danger (exposition aux dangers)\
-      \ et pour évaluer le potentiel de perturbations socioéconomiques dans les\
-      \ zones où l’intensité des dangers est susceptible d’excéder les seuils\
-      \ minimaux de dommages potentiels (sensibilité aux dangers). \nLes menaces\
-      \ liées aux aléas sismiques sont évaluées au moyen des niveaux d’intensité\
-      \ des secousses telluriques survenant une fois tous les 2 500 ans mis au point\
-      \ par la Commission géologique du Canada pour évaluer les seuils minimaux\
-      \ des dommages aux bâtiments. Les menaces liées aux risques de feux de forêt\
-      \ sont évaluées au moyen des niveaux moyens d’intensité du front (IF) mis\
-      \ au point par le Service canadien des forêts pour évaluer les biens communautaires\
-      \ en danger. Les menaces liées aux coulées de débris sont basées sur un\
-      \ modèle de vulnérabilité aux glissements de terrain à variables multiples\
-      \ mis au point par la NASA dans le cadre d’un système mondial d’alerte\
-      \ rapide pour les événements déclenchés par les conditions météorologiques.\
-      \ Les menaces liées aux tsunamis, aux débordements de cours d’eau et aux\
-      \ vents violents sont basées sur les modèles de cyclone et inondations survenant\
-      \ 1 fois tous les 500 ans dans le cadre du Bilan mondial 2011 sur la réduction\
-      \ des risques de catastrophe des Nations Unies pour orienter les efforts de\
-      \ gestion des catastrophes à l’échelle régionale et nationale. La sensibilité\
-      \ à chacun des dangers est estimée en fonction du nombre de gens et de biens\
-      \ essentiels exposés au niveau des aires de diffusion du recensement. \nLes\
-      \ résultats sont regroupés dans un index des menaces liées à des dangers\
-      \ multiples pour aider à cerner les points chauds préoccupants dans l’ensemble\
-      \ du Canada."
+    en: |
+        The Natural Hazard Threat component of the National Human Settlement Layer (NHSL) extends capabilities of the physical exposure model to address the question of who and what are susceptible to natural hazards of concern in Canada.  It utilizes available national-level information on earthquake, flood, debris flow, wildfire, and severe wind hazards to evaluate the extent to which people and critical assets are situated in harm’s way (hazard exposure); and the potential for socioeconomic disruptions in those areas where hazard intensities are likely to exceed minimum thresholds of damage potential (hazard susceptibility).\n
+        Earthquake hazard threats are assessed using 1/2500-year ground shaking intensity levels developed by the Geological Survey of Canada to evaluate minimum thresholds of building damage. Wildfire hazard threats are assessed using mean head fire intensity (HFI) levels developed by the Canadian Forest Service to evaluate community assets at risk. Debris Flow threats are based on a multi-variate landslide susceptibility model developed by NASA as part of a global early warning system for weather-triggered events. Tsunami, riverine flood and severe wind hazard threats are based on 1/500-year inundation and cyclone models developed as part of the 2011 Global Assessment Report on Disaster Risk Reduction (GAR) to inform disaster management efforts at regional and national scales.\n
+        Susceptibility to individual hazards is estimated based on the numbers of people and critical assets exposed at the Census Dissemination Area level. The results are aggregated into a multi-hazard threat index to help identify hotspots of concern across Canada.
+    fr: |
+        L’élément « menaces liées aux dangers naturels » de la couche des zones de peuplement au niveau national (couche ZPN) étend la capacité du modèle d’exposition physique à approfondir la question de savoir qui et quoi pourrait être affecté par des dangers naturels préoccupants au Canada. Il utilise l’information disponible au niveau national sur les tremblements de terre, les inondations, les coulées de débris, les feux de forêt et les dangers liés aux vents violents pour évaluer dans quelle mesure les gens et les biens essentiels se trouvent en danger (exposition aux dangers) et pour évaluer le potentiel de perturbations socioéconomiques dans les zones où l’intensité des dangers est susceptible d’excéder les seuils minimaux de dommages potentiels (sensibilité aux dangers).\n
+        Les menaces liées aux aléas sismiques sont évaluées au moyen des niveaux d’intensité des secousses telluriques survenant une fois tous les 2 500 ans mis au point par la Commission géologique du Canada pour évaluer les seuils minimaux des dommages aux bâtiments. Les menaces liées aux risques de feux de forêt sont évaluées au moyen des niveaux moyens d’intensité du front (IF) mis au point par le Service canadien des forêts pour évaluer les biens communautaires en danger. Les menaces liées aux coulées de débris sont basées sur un modèle de vulnérabilité aux glissements de terrain à variables multiples mis au point par la NASA dans le cadre d’un système mondial d’alerte rapide pour les événements déclenchés par les conditions météorologiques. Les menaces liées aux tsunamis, aux débordements de cours d’eau et aux vents violents sont basées sur les modèles de cyclone et inondations survenant 1 fois tous les 500 ans dans le cadre du Bilan mondial 2011 sur la réduction des risques de catastrophe des Nations Unies pour orienter les efforts de gestion des catastrophes à l’échelle régionale et nationale. La sensibilité à chacun des dangers est estimée en fonction du nombre de gens et de biens essentiels exposés au niveau des aires de diffusion du recensement.\n
+        Les résultats sont regroupés dans un index des menaces liées à des dangers multiples pour aider à cerner les points chauds préoccupants dans l’ensemble du Canada.
   id: nhsl_hazard_threat_indicators
   map_layer: '6'
   map_type: esri_rest
@@ -413,25 +389,22 @@ datasets:
     name: Natural Hazard Threats point geometry (YT)
     region: yt
     type: Dataset
-  title:
-    en: Natural Hazard Threats
-    fr: Dangers naturels
-- collection:
-    en: Human Settlement and Natural Hazards in Canada
-    fr: Zones de peuplement et dangers naturels au Canada
+- title:
+    en: Physical Exposure
+    fr: Exposition physique
   description:
-    en: | 
-          The Physical Exposure component of the National Human Settlement Layer (NHSL) includes a delineation of settled areas and related land use across Canada, as well as information about buildings, persons, and capital value of buildings assets (structure and contents) within those areas.\n
-          This model represents an inventory of more than 9.1 million buildings in Canada; population dynamics at different times of day for 35.1 million people, and; the capital value of building assets totalling more than 8.3 trillion CAD$.\n
-          Buildings are classified according to their construction type, occupancy, and age. These classes are derived from the standard North American  HAZUS  building  taxonomy and include 38 construction classes representing different types of wood, concrete, masonry, steel and prefabricated structures; 33 occupancy classes representing a mix of residential, civic, commercial and industrial land uses; and 4 age classes representing the assumed level of building design. The distribution of resulting ‘building archetypes’ are assigned to settled areas based on associated land-use and census characteristics.\n
-          Building populations at different times of day are estimated for standard daytime hours (9am-5pm); for morning and evening commute hours when people are in transit (7am-9am; 5pm-7pm), and; for nighttime hours when the majority of people are at home (7pm-7am).\n
-          The capital value of buildings assets is provided for structural and non-structural components of the building, as well as the potential building contents. Asset values are estimated based on industry replacement costs for representative regions across Canada.
+    en: |
+        The Physical Exposure component of the National Human Settlement Layer (NHSL) includes a delineation of settled areas and related land use across Canada, as well as information about buildings, persons, and capital value of buildings assets (structure and contents) within those areas.\n
+        This model represents an inventory of more than 9.1 million buildings in Canada; population dynamics at different times of day for 35.1 million people, and; the capital value of building assets totalling more than 8.3 trillion CAD$.\n
+        Buildings are classified according to their construction type, occupancy, and age. These classes are derived from the standard North American  HAZUS  building  taxonomy and include 38 construction classes representing different types of wood, concrete, masonry, steel and prefabricated structures; 33 occupancy classes representing a mix of residential, civic, commercial and industrial land uses; and 4 age classes representing the assumed level of building design. The distribution of resulting ‘building archetypes’ are assigned to settled areas based on associated land-use and census characteristics.\n
+        Building populations at different times of day are estimated for standard daytime hours (9am-5pm); for morning and evening commute hours when people are in transit (7am-9am; 5pm-7pm), and; for nighttime hours when the majority of people are at home (7pm-7am).\n
+        The capital value of buildings assets is provided for structural and non-structural components of the building, as well as the potential building contents. Asset values are estimated based on industry replacement costs for representative regions across Canada.
     fr: |
-          L’élément « Exposition physique » de la couche ZPN délimite les régions habitées de l’ensemble du Canada et l’utilisation du sol dans ces régions, en plus d’inclure des renseignements sur les bâtiments, la population et la valeur en capital des biens immobiliers (structure et contenu).\n
-          Ce modèle comprend un inventaire de plus de 9,1 millions de bâtiments au Canada, la dynamique de la population à divers moments de la journée pour 35,1 millions de personnes et la valeur en capital de biens immobiliers totalisant plus de 8,3 billions de dollars canadiens.\n
-          Les bâtiments sont classés en fonction du type de construction, de l’occupation et de l’âge. Ces classes sont basées sur la taxonomie normalisée HAZUS des bâtiments de l’Amérique du Nord. On compte 38 classes de construction représentant différents types de bois, de béton, de maçonnerie, d’acier et de structures préfabriquées; 33 classes d’occupation représentant une variété d’utilisations résidentielles, civiques, commerciales et industrielles; et 4 classes d’âge représentant le niveau présumé de conception du bâtiment. La distribution des « archétypes de bâtiments » obtenus est attribuée à des régions habitées en fonction de l’utilisation du sol et des caractéristiques du recensement.\n
-          Le nombre d’occupants des bâtiments à différents moments de la journée est estimé pour les trois périodes suivantes : le jour (de 9 h à 17 h), pendant les déplacements domicile-travail du matin et du soir (de 7 h à 9 h et de 17 h à 19 h) et la nuit, lorsque la majorité des gens sont à la maison (de 19 h à 7 h).\n
-          La valeur en capital des biens immobiliers est fournie pour les éléments structurels et non structurels des bâtiments, ainsi que pour le contenu potentiel du bâtiment. La valeur des biens est estimée en fonction des coûts de remplacement de l’industrie pour des régions représentatives du Canada."
+        L’élément « Exposition physique » de la couche ZPN délimite les régions habitées de l’ensemble du Canada et l’utilisation du sol dans ces régions, en plus d’inclure des renseignements sur les bâtiments, la population et la valeur en capital des biens immobiliers (structure et contenu).\n
+        Ce modèle comprend un inventaire de plus de 9,1 millions de bâtiments au Canada, la dynamique de la population à divers moments de la journée pour 35,1 millions de personnes et la valeur en capital de biens immobiliers totalisant plus de 8,3 billions de dollars canadiens.\n
+        Les bâtiments sont classés en fonction du type de construction, de l’occupation et de l’âge. Ces classes sont basées sur la taxonomie normalisée HAZUS des bâtiments de l’Amérique du Nord. On compte 38 classes de construction représentant différents types de bois, de béton, de maçonnerie, d’acier et de structures préfabriquées; 33 classes d’occupation représentant une variété d’utilisations résidentielles, civiques, commerciales et industrielles; et 4 classes d’âge représentant le niveau présumé de conception du bâtiment. La distribution des « archétypes de bâtiments » obtenus est attribuée à des régions habitées en fonction de l’utilisation du sol et des caractéristiques du recensement.\n
+        Le nombre d’occupants des bâtiments à différents moments de la journée est estimé pour les trois périodes suivantes : le jour (de 9 h à 17 h), pendant les déplacements domicile-travail du matin et du soir (de 7 h à 9 h et de 17 h à 19 h) et la nuit, lorsque la majorité des gens sont à la maison (de 19 h à 7 h).\n
+        La valeur en capital des biens immobiliers est fournie pour les éléments structurels et non structurels des bâtiments, ainsi que pour le contenu potentiel du bâtiment. La valeur des biens est estimée en fonction des coûts de remplacement de l’industrie pour des régions représentatives du Canada."
   id: nhsl_physical_exposure_indicators
   map_layer: '5'
   map_type: esri_rest
@@ -655,6 +628,3 @@ datasets:
     name: Physical Exposure point geometry (YT)
     region: yt
     type: Dataset
-  title:
-    en: Physical Exposure
-    fr: Exposition physique
