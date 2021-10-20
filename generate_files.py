@@ -94,7 +94,7 @@ for layer in nhsl_yml['layers']:
 [En français](https://github.com/OpenDRR/national-human-settlement/blob/main/{set["folder"]}/LISEZMOI.md)
 
 # National Human Settlement - {set["title"]["en"]}
- 
+
 {description}''')
 
     # Write french
@@ -104,5 +104,5 @@ for layer in nhsl_yml['layers']:
 [In English](https://github.com/OpenDRR/national-human-settlement/blob/main/{set["folder"]}/README.md)
 
 # Zones de peuplement au niveau national - {set["title"]["fr"]}
- 
+
 {description_fr}''')
