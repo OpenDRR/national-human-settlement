@@ -25,7 +25,7 @@ sets:
 technical:
   title:
     en: Technical Use
-    fr: Utilisation technique - test
+    fr: Utilisation technique
   body:
     en: |
         It is possible to download individual files from the web, by clicking on either 'Raw' or 'Download' from the top right corner of a file preview page. For those wishing to clone this repository, please ensure you have Git LFS enabled on your machine prior to cloning.
@@ -64,8 +64,8 @@ attribution:
         _insérer le texte d'attribution_
 datasets:
 - title:
-    en: Social Fabric and Capacity Thresholds - test
-    fr: Tissu social et seuils de capacité - test
+    en: Social Fabric and Capacity Thresholds
+    fr: Tissu social et seuils de capacité
   description:
     en: |
         The Social Vulnerability component of the National Human Settlement Layer (NHSL) includes information about broad spatial patterns of social vulnerability at the neighbourhood scale, and indicators about the capacities for a community to withstand and recover from disaster events based on intrinsic characteristics of housing, family structure, individual autonomy and financial agency.\n
