@@ -17,4 +17,13 @@ jobs:
           pip install -r requirements.txt
       - name: Run script
         run: python generate_files.py
-
+      - name: Push
+        uses: actions-x/commit@v2
+        with:
+          email: damon_ulmi@hotmail.com
+          name: GitHub Actions Autocommitter
+          branch: gh-pages
+          files: README.md LISEZMOI.md docs/_data/nhsl.yml physical-exposure/README.md physical-exposure/LISEZMOI.md social-fabric/README.md social-fabric/LISEZMOI.md
+          repository: https://github.com/DamonU2/national-human-settlement
+          token: ${{ secrets.MY_SECRET_TOKEN }}
+          force: true

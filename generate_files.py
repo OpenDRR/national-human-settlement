@@ -13,7 +13,7 @@ with open('./docs/_data/nhsl.yml', 'r', encoding='utf-8') as f:
     f2 = f.read()
     # If they are different, update _data version
     if f1 != f2:
-        with open('https://github.com/DamonU2/national-human-settlement/blob/gh-pages/docs/_data/nhsl.yml', 'w', encoding='utf-8') as g:
+        with open('./docs/_data/nhsl.yml', 'w', encoding='utf-8') as g:
             g.write(f1)
 
 
