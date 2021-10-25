@@ -4,7 +4,6 @@ import yaml
 # Load yaml
 with open('./nhsl.yml', 'r', encoding='utf-8') as f:
     nhsl_yml = yaml.load(f, Loader=yaml.Loader)
-    print(nhsl_yml)
 
 # Compare nhsl.yml in root dir to version in _data
 with open('./nhsl.yml', 'r', encoding='utf-8') as f:
@@ -15,6 +14,7 @@ with open('./docs/_data/nhsl.yml', 'r', encoding='utf-8') as f:
     if f1 != f2:
         with open('./docs/_data/nhsl.yml', 'w', encoding='utf-8') as g:
             g.write(f1)
+            print('overwritten')
 
 
 for lang in ['en', 'fr']:
