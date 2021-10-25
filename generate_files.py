@@ -5,6 +5,17 @@ import yaml
 with open('./nhsl.yml', 'r', encoding='utf-8') as f:
     nhsl_yml = yaml.load(f, Loader=yaml.Loader)
 
+# Compare nhsl.yml in root dir to version in _data
+with open('./nhsl.yml', 'r', encoding='utf-8') as f:
+    f1 = f.read()
+with open('./docs/_data/nhsl.yml', 'r', encoding='utf-8') as f:
+    f2 = f.read()
+    # If they are different, update _data version
+    if f1 != f2:
+        with open('./docs/_data/nhsl.yml', 'w', encoding='utf-8') as g:
+            g.write(f1)
+
+
 for lang in ['en', 'fr']:
     # Endlines staying as \n without replacement
     description = nhsl_yml['description'][lang].replace('\\n', '\n')
