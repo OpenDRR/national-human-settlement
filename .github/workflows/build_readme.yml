@@ -18,7 +18,7 @@ jobs:
           pip install -r requirements.txt
       - name: Run script
         run: python generate_files.py
-      -name: Check for changes
+      - name: Check for changes
         id: check
         run: OUTPUT=$(git status -s)
       - name: Commit files
