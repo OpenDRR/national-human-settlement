@@ -17,9 +17,9 @@ These datasets have been developed to provide information about physical exposur
 ### Available Datasets
 
 - [Physical Exposure](https://github.com/OpenDRR/national-human-settlement/tree/main/physical-exposure)
-- [Social Fabric and Capacity Thresholds](https://github.com/OpenDRR/national-human-settlement/tree/main/social-fabric)
+- [Social Fabric and Capacity Thresholds - test](https://github.com/OpenDRR/national-human-settlement/tree/main/social-fabric)
 
-## Technical Use - test
+## Technical Use
 
 It is possible to download individual files from the web, by clicking on either 'Raw' or 'Download' from the top right corner of a file preview page. For those wishing to clone this repository, please ensure you have Git LFS enabled on your machine prior to cloning.
 
