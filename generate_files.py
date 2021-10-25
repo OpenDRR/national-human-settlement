@@ -4,6 +4,7 @@ import yaml
 # Load yaml
 with open('./nhsl.yml', 'r', encoding='utf-8') as f:
     nhsl_yml = yaml.load(f, Loader=yaml.Loader)
+    print(nhsl_yml)
 
 # Compare nhsl.yml in root dir to version in _data
 with open('./nhsl.yml', 'r', encoding='utf-8') as f:
