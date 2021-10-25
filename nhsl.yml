@@ -24,8 +24,8 @@ sets:
   fr: Ensembles de données disponibles
 technical:
   title:
-    en: Technical Use
-    fr: Utilisation technique - test
+    en: Technical Use - test
+    fr: Utilisation technique
   body:
     en: |
         It is possible to download individual files from the web, by clicking on either 'Raw' or 'Download' from the top right corner of a file preview page. For those wishing to clone this repository, please ensure you have Git LFS enabled on your machine prior to cloning.

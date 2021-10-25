@@ -20,7 +20,7 @@ jobs:
         run: python generate_files.py
       - name: Check for changes
         id: check
-        run: OUTPUT=$(git status -s)
+        run: OUTPUT= git status -s
       - name: Commit files
         if: steps.check.outputs.OUTPUT != ''
         run: |
