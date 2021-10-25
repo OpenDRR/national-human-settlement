@@ -25,7 +25,7 @@ sets:
 technical:
   title:
     en: Technical Use
-    fr: Utilisation technique
+    fr: Utilisation technique - test
   body:
     en: |
         It is possible to download individual files from the web, by clicking on either 'Raw' or 'Download' from the top right corner of a file preview page. For those wishing to clone this repository, please ensure you have Git LFS enabled on your machine prior to cloning.
