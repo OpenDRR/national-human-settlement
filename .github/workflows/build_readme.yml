@@ -5,6 +5,12 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
+  outputs:
+    random-number:
+      description: "Git status"
+      value: ${{ steps.random-number-generator.outputs.random-id }}
+  runs:
+    using: "composite"
     steps:
       - name: checkout
         uses: actions/checkout@v2
@@ -20,7 +26,8 @@ jobs:
         run: python generate_files.py
       - name: Check for changes
         id: check
-        run: OUTPUT= $(git status -s)
+        run: echo "::set-output name=status::$(echo 'git status -s')"
+        shell: bash
       - name: Commit files
         if: ${{ steps.check.outputs.OUTPUT }} != ''
         run: |
