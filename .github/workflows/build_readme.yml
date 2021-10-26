@@ -23,14 +23,8 @@ jobs:
         run: |
           OUTPUT=$(git status -s)
           echo "::set-output name=status::$OUTPUT"
-  commit:
-    runs-on: ubuntu-latest
-    needs: runs
-    steps:
-      - name: checkout
-        uses: actions/checkout@v2
       - name: Check
-        run: echo ${{ needs.runs.steps.outputs.status }}
+        run: ${{ steps.check.outputs.status }}
       - name: Commit files
         if: ${{ needs.runs.steps.outputs.status }} != ''
         run: |
