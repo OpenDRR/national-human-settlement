@@ -1,3 +1,9 @@
+# Format: - positive numbers are number of decimal places to display
+#         - negative numbers round to that power of ten (ie. 3 would round to 1,000s)
+#         - 111 rounds to whole number
+#         - 444 for dollars and cents
+#         - 555 converts decimal to percentage
+
 attributes:
 - description:
     en: Settled Area ID
