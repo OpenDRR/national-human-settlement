@@ -29,7 +29,7 @@ jobs:
           git status
           git commit -m "Auto updated from changes to nhsl.yml" -a
       - name: Push changes
-        if: steps.check.outputs.OUTPUT
+        if: ${{ steps.check.outputs.OUTPUT }} != ''
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
