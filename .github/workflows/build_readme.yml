@@ -5,12 +5,7 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
-  outputs:
-    random-number:
-      description: "Git status"
-      value: ${{ steps.random-number-generator.outputs.random-id }}
   runs:
-    using: "composite"
     steps:
       - name: checkout
         uses: actions/checkout@v2
@@ -26,17 +21,21 @@ jobs:
         run: python generate_files.py
       - name: Check for changes
         id: check
-        run: echo "::set-output name=status::$(echo 'git status -s')"
-        shell: bash
+        run: |
+          OUTPUT=$(git status -s)
+          echo "::set-output name=status::$OUTPUT"
+  commit:
+    needs: runs
+    steps:
       - name: Commit files
-        if: ${{ steps.check.outputs.OUTPUT }} != ''
+        if: ${{ needs.runs.steps.outputs.status }} != ''
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git status
           git commit -m "Auto updated from changes to nhsl.yml" -a
       - name: Push changes
-        if: ${{ steps.check.outputs.OUTPUT }} != ''
+        if: ${{ needs.runs.steps.outputs.status }} != ''
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
