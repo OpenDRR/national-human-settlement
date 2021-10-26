@@ -29,8 +29,9 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
-      - name: Commit files
+      - name: Check
         run: echo ${{ needs.runs.steps.outputs.status }}
+      - name: Commit files
         if: ${{ needs.runs.steps.outputs.status }} != ''
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
