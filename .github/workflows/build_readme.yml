@@ -20,9 +20,9 @@ jobs:
         run: python generate_files.py
       - name: Check for changes
         id: check
-        run: OUTPUT= git status -s
+        run: OUTPUT=git status -s
       - name: Commit files
-        if: git status -s
+        if: ${{ steps.check.outputs.OUTPUT }}
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
