@@ -30,6 +30,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
       - name: Commit files
+        run: echo ${{ needs.runs.steps.outputs.status }}
         if: ${{ needs.runs.steps.outputs.status }} != ''
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
