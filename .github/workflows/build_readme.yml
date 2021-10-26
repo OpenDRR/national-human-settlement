@@ -3,7 +3,7 @@ name: Run generate_files.py
 on: push
 
 jobs:
-  runs:
+  run:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
@@ -23,8 +23,6 @@ jobs:
         run: |
           status=$(git status -s)
           echo "::set-output name=status::$status"
-      - name: Check
-        run: echo ${{ steps.check.outputs.status }}
       - name: Commit files
         if: ${{ steps.check.outputs.status }}
         run: |
