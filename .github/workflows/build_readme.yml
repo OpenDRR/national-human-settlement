@@ -21,10 +21,10 @@ jobs:
       - name: Check for changes
         id: check
         run: |
-          OUTPUT=$(git status -s)
-          echo "::set-output name=status::$OUTPUT"
+          status=$(git status -s)
+          echo "::set-output name=status::$status"
       - name: Check
-        run: ${{ steps.check.outputs.status }}
+        run: echo ${{ steps.check.outputs.status }}
       - name: Commit files
         if: ${{ needs.runs.steps.outputs.status }} != ''
         run: |
