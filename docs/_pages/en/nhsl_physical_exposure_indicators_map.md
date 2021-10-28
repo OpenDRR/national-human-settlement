@@ -17,9 +17,9 @@ breadcrumbs:
   - title: "OpenDRR"
     link: "https://www.github.com/OpenDRR/"
   - title: "OpenDRR Downloads"
-    link: "/en"
+    link: "../data/en"
   - title: "Human Settlement and Natural Hazards in Canada"
-    link: "/en/nhsl"
+    link: "/en/"
   - title: "Physical Exposure"
     link: "/en/nhsl#physical_exposure"
 ---
