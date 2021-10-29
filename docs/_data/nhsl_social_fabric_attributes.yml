@@ -1,0 +1,1178 @@
+# Format: - positive numbers are number of decimal places to display
+#         - negative numbers round to that power of ten (ie. 3 would round to 1,000s)
+#         - 111 rounds to whole number
+#         - 444 for dollars and cents
+#         - 555 converts decimal to percentage
+
+attributes:
+- description:
+    en: Settled Area ID
+    fr: Identification de la zone habitée
+  detailed:
+    en: Unique identification code assiged to the Settled Area (SAUID), which represents
+      the approximate footprint of permanent buildings within standard census dissemination
+      areas (DAUID)
+    fr: Code d’identification unique attribué à la zone habitée (SAUID), qui représente
+      l’empreinte approximative des immeubles permanents dans les aires de diffusion
+      standard du recensement (DAUID).
+  format: 
+  name: Sauid
+- description:
+    en: Total Social Vulnerability Score
+    fr: Note totale de vulnérabilité sociale
+  detailed:
+    en: 'A composite indicator to represent the Settled Areas (SAUID) relative level
+      of social vulnerability compared to other Settled Areas of the same community
+      archetype across Canada. This is equal to the number of social vulnerability
+      indicators that exceed their assocaited indicator threhold values for the community
+      archetype.'
+    fr: 'Un indicateur composite pour représenter le niveau relatif de vulnérabilité
+      sociale des zones habitées (SAUID) par rapport aux autres zones habitées du
+      même archétype de communauté partout au Canada. Cet élément est égal au nombre
+      d’indicateurs de vulnérabilité sociale qui dépassent les seuils d’indicateurs
+      qui leur sont attribués pour l’archétype de communauté.'
+  format: 
+  name: SVlt_Score
+- description:
+    en: Housing Condition Score
+    fr: Note de condition du logement
+  detailed:
+    en: Number of housing condition indicators that exceed thier associated indicator
+      threhold values for the community archetype.
+    fr: Nombre d’indicateurs de condition du logement qui dépassent les valeurs seuils
+      des indicateurs associés pour l’archétype de communauté.
+  format: 
+  name: VHt_Score
+- description:
+    en: Population Density of Settled Area
+    fr: Densité de population de la zone habitée
+  detailed:
+    en: Number of people per hectare within the Settled Area (SAUID)
+    fr: Nombre de personnes par hectare dans la zone habitée (SAUID)
+  format: 
+  name: VH_PopHa
+- description:
+    en: Population Density (normalized)
+    fr: Densité de population (normalisé)
+  detailed:
+    en: VH_PopHa value normalized to a range of 0-1 for respective community archetype
+      (SAC) using Min_Max transformation
+    fr: Valeur VH_PopHa normalisée à une fourchette de 0-1 pour l’archétype de communauté
+      respectif (CSS) en utilisant la transformation Min_Max.
+  format: 3
+  name: VHn_PopHa
+- description:
+    en: Population Density (threshold)
+    fr: Densité de population (seuil)
+  detailed:
+    en: Equals one if VH_PopHa exceeds the indicators threshold value, which is the
+      VH_PopHa average +1 standard deviation when considering Settled Areas (SAUID)
+      of the same community archetype (SAC).
+    fr: Est égal à un si VH_PopHa dépasse la valeur seuil des indicateurs, qui est
+      la moyenne de VH_PopHa + un écart type en considérant les zones habitées (SAUID)
+      du même archétype de communauté (CSS).
+  format: 
+  name: VHt_PopHa
+- description:
+    en: Percent of Buildings Built Before 1975
+    fr: Pourcentage d’immeubles construits avant 1975
+  detailed:
+    en: Percent of building stock in Settled Area (SAUID) that predates modern seismic
+      safety guidelines introduced in 1975
+    fr: Pourcentage du parc immobilier de la zone habitée (SAUID) qui était présent
+      avant l’introduction des directives modernes de sécurité sismique en 1975.
+  format: 555
+  name: VH_Pre1975
+- description:
+    en: Pre-1975 Buildings (normalized)
+    fr: Immeubles d’avant 1975 (normalisé)
+  detailed:
+    en: VH_Pre1975 value normalized to a range of 0-1 for respective community archetype
+      (SAC) using Min_Max transformation
+    fr: Valeur VH_Pre1975 normalisée à une fourchette de 0-1 pour l’archétype de communauté
+      respectif (CSS) en utilisant la transformation Min_Max.
+  format: 3
+  name: VHn_Pre1975
+- description:
+    en: Pre-1975 Buildings (threshold)
+    fr: Immeubles d’avant 1975 (seuil)
+  detailed:
+    en: Equals one if VH_Pre1975 exceeds the indicators threshold value, which is
+      the VH_Pre1975 average +1 standard deviation when considering Settled Areas
+      (SAUID) of the same community archetype (SAC).
+    fr: Est égal à un si VH_Pre1975 dépasse la valeur seuil des indicateurs, qui est
+      la moyenne de VH_Pre1975 + un écart type en considérant les zones habitées (SAUID)
+      du même archétype de communauté (CSS).
+  format: 
+  name: VHtPre1975
+- description:
+    en: Percent Non-Suitable Housing
+    fr: Pourcentage de logements inadaptés
+  detailed:
+    en: Percent of private households living in conditions that are not suitable for
+      the size of family as determined by the National Occupancy Standard (NOS)
+    fr: Pourcentage de ménages privés vivant dans des conditions inadaptées à la taille
+      de la famille, selon les critères de la Norme nationale d’occupation (NNO).
+  format: 555
+  name: VH_NSuit
+- description:
+    en: Non-Suitable Housing (normalized)
+    fr: Logement inadapté (normalisé)
+  detailed:
+    en: VH_NSuit value normalized to a range of 0-1 for respective community archetype
+      (SAC) using Min_Max transformation
+    fr: Valeur VH_NSuit normalisée à une fourchette de 0-1 pour l’archétype de communauté
+      respectif (CSS) en utilisant la transformation Min_Max.
+  format: 3
+  name: VHn_NSuit
+- description:
+    en: Non-Suitable Housing (threshold)
+    fr: Logement inadapté (seuil)
+  detailed:
+    en: Equals one if VH_NSuit exceeds the indicators threshold value, which is the
+      VH_NSuit average +1 standard deviation when considering Settled Areas (SAUID)
+      of the same community archetype (SAC).
+    fr: Est égal à un si VH_NSuit dépasse la valeur seuil des indicateurs, qui est
+      la moyenne de VH_NSuit + un écart type en considérant les zones habitées (SAUID)
+      du même archétype de communauté (CSS).
+  format: 
+  name: VHt_NSuit
+- description:
+    en: Percent households with Limited Maintenance Capacity
+    fr: Pourcentage de ménages ayant une capacité d’entretien limitée
+  detailed:
+    en: Percent of private households where primary resident responsible for maintenance
+      expenses (e.g. rent, mortgage, taxes, utilities) is over the age of 65 or under
+      the age of 25
+    fr: Pourcentage de ménages privés dont le résident principal responsable des dépenses
+      d’entretien (p. ex. loyer, hypothèque, taxes, services publics) a plus de 65 ans
+      ou moins de 25 ans.
+  format: 555
+  name: VH_MntnAge
+- description:
+    en: Limited Household Maintenance Capacity (normalized)
+    fr: Capacité d’entretien limitée du ménage (normalisé)
+  detailed:
+    en: VH_MntnAge value normalized to a range of 0-1 for respective community archetype
+      (SAC) using Min_Max transformation
+    fr: Valeur VH_MntnAge normalisée à une fourchette de 0-1 pour l’archétype de communauté
+      respectif (CSS) en utilisant la transformation Min_Max.
+  format: 3
+  name: VHn_MntnAge
+- description:
+    en: Limited Household Maintenance Capacity (threshold)
+    fr: Capacité d’entretien limitée du ménage (seuil)
+  detailed:
+    en: Equals one if VH_MntnAge exceeds the indicators threshold value, which is
+      the VH_MntnAge average +1 standard deviation when considering Settled Areas
+      (SAUID) of the same community archetype (SAC).
+    fr: Est égal à un si VH_MntnAge dépasse la valeur seuil des indicateurs, qui est
+      la moyenne de VH_MntnAge + un écart type en considérant les zones habitées (SAUID)
+      du même archétype de communauté (CSS).
+  format: 
+  name: VHt_MntnAge
+- description:
+    en: Percent of Households with Only 1 Maintainer
+    fr: Pourcentage de ménages avec un seul responsable des frais d\u0027entretien
+  detailed:
+    en: Percent of private households with only one resident responsible for maintenance
+      expenses (e.g. rent, mortgage, taxes, utilities)
+    fr: Pourcentage de ménages privés dans lesquels un seul résident est responsable
+      des dépenses d’entretien (p. ex. loyer, hypothèque, taxes, services publics).
+  format: 555
+  name: VH_Mntn1
+- description:
+    en: Households with Only 1 Maintainer (normalized)
+    fr: Ménages avec un seul responsable des frais d\u0027entretien (normalisé)
+  detailed:
+    en: VH_Mntn1 value normalized to a range of 0-1 for respective community archetype
+      (SAC) using Min_Max transformation
+    fr: Valeur VH_Mntn1 normalisée à une fourchette de 0-1 pour l’archétype de communauté
+      respectif (CSS) en utilisant la transformation Min_Max.
+  format: 3
+  name: VHn_Mntn1
+- description:
+    en: Households with Only 1 Maintainer (threshold)
+    fr: Ménages avec un seul responsable des frais d\u0027entretien (seuil)
+  detailed:
+    en: Equals one if VH_Mntn1 exceeds the indicators threshold value, which is the
+      VH_Mntn1 average +1 standard deviation when considering Settled Areas (SAUID)
+      of the same community archetype (SAC).
+    fr: Est égal à un si VH_Mntn1 dépasse la valeur seuil des indicateurs, qui est
+      la moyenne de VH_Mntn1 + un écart type en considérant les zones habitées (SAUID)
+      du même archétype de communauté (CSS).
+  format: 
+  name: VHt_Mntn1
+- description:
+    en: Percent of Tenant Households (or Band Housing)
+    fr: Pourcentage de ménages locataires (ou logements de bande)
+  detailed:
+    en: Percent of private households where no member of the household owns the capital
+      asset. The dwelling is considered to be rented even if no cash rent is paid.
+    fr: Pourcentage de ménages privés où aucun membre du ménage n’est propriétaire
+      de l’immobilisation. Le logement est considéré comme étant loué même si aucun
+      loyer en espèces n’est payé.
+  format: 555
+  name: VH_Renter
+- description:
+    en: Tenant Households (normalized)
+    fr: Ménages locataires (normalisé)
+  detailed:
+    en: VH_Renter value normalized to a range of 0-1 for respective community archetype
+      (SAC) using Min_Max transformation
+    fr: Valeur VH_Renter normalisée à une fourchette de 0-1 pour l’archétype de communauté
+      respectif (CSS) en utilisant la transformation Min_Max.
+  format: 3
+  name: VHn_Renter
+- description:
+    en: Tenant Households (threshold)
+    fr: Ménages locataires (seuil)
+  detailed:
+    en: Equals one if VH_Renter exceeds the indicators threshold value, which is the
+      VH_Renter average +1 standard deviation when considering Settled Areas (SAUID)
+      of the same community archetype (SAC).
+    fr: Est égal à un si VH_Renter dépasse la valeur seuil des indicateurs, qui est
+      la moyenne de VH_Renter + un écart type en considérant les zones habitées (SAUID)
+      du même archétype de communauté (CSS).
+  format: 
+  name: VHt_Renter
+- description:
+    en: Percent Non-Residential Buildings
+    fr: Pourcentage d’immeubles non résidentiels
+  detailed:
+    en: Percent of buildings classified as non-residential in a Settled Area (SAUID)
+      (i.e. occupancy classification of commercial, industrial, agricultural or civic)
+    fr: Pourcentage d’immeubles à classification d’usage non résidentielle dans une
+      zone habitée (SAUID) [c.-à-d. classification d’occupation commerciale, industrielle,
+      agricole ou civique].
+  format: 555
+  name: VH_NonResHa
+- description:
+    en: Non-Residential Buildings (normalized)
+    fr: Immeubles non résidentiels (normalisé)
+  detailed:
+    en: VH_NonResHa value normalized to a range of 0-1 for respective community archetype
+      (SAC) using Min_Max transformation
+    fr: Valeur VH_NonResHa normalisée à une fourchette de 0-1 pour l’archétype de
+      communauté respectif (CSS) en utilisant la transformation Min_Max.
+  format: 3
+  name: VHn_NonResHa
+- description:
+    en: Non-Residential Buildings (threshold)
+    fr: Immeubles non résidentiels (seuil)
+  detailed:
+    en: Equals one if VH_NonResHa exceeds the indicators threshold value, which is
+      the VH_NonResHa average +1 standard deviation when considering Settled Areas
+      (SAUID) of the same community archetype (SAC).
+    fr: Est égal à un si VH_NonResHa dépasse la valeur seuil des indicateurs, qui
+      est la moyenne de VH_NonResHa + un écart type en considérant les zones habitées
+      (SAUID) du même archétype de communauté (CSS).
+  format: 
+  name: VHt_NonResHa
+- description:
+    en: Social Connection Score
+    fr: Note de liens sociaux
+  detailed:
+    en: Number of social connection indicators that exceed their assocaited indicator
+      threhold values for the community archetype.
+    fr: Nombre d’indicateurs de liens sociaux qui dépassent les valeurs seuils des
+      indicateurs associés pour l’archétype de communauté.
+  format: 
+  name: VFt_Score
+- description:
+    en: Percent of Population Living Alone
+    fr: Pourcentage de la population vivant seule
+  detailed:
+    en: Percent of private households where resident lives alone
+    fr: Pourcentage de ménages privés dans lesquels le résident vit seul
+  format: 555
+  name: VF_LivAlone
+- description:
+    en: People Living Alone (normalized)
+    fr: Personnes vivant seules (normalisé)
+  detailed:
+    en: VF_LivAlone value normalized to a range of 0-1 for respective community archetype
+      (SAC) using Min_Max transformation
+    fr: Valeur VF_LivAlone normalisée à une fourchette de 0-1 pour l’archétype de
+      communauté respectif (CSS) en utilisant la transformation Min_Max.
+  format: 3
+  name: VFn_LivAlone
+- description:
+    en: People Living Alone (threshold)
+    fr: Personnes vivant seules (seuil)
+  detailed:
+    en: Equals one if VF_LivAlone exceeds the indicators threshold value, which is
+      the VF_LivAlone average +1 standard deviation when considering Settled Areas
+      (SAUID) of the same community archetype (SAC).
+    fr: Est égal à un si VF_LivAlone dépasse la valeur seuil des indicateurs, qui
+      est la moyenne de VF_LivAlone + un écart type en considérant les zones habitées
+      (SAUID) du même archétype de communauté (CSS).
+  format: 
+  name: VFt_LivAlone
+- description:
+    en: Percent Lone Parent Families with 3 Children
+    fr: Pourcentage de familles monoparentales avec trois enfants
+  detailed:
+    en: Percent of census families in private households containing only one parent
+      living with three or more children
+    fr: Pourcentage de familles de recensement dans les ménages privés où un seul
+      parent vit avec trois enfants ou plus.
+  format: 555
+  name: VF_LonPar3Kids
+- description:
+    en: Lone Parent Families with 3 Children (normalized)
+    fr: Familles monoparentales avec trois enfants (normalisé)
+  detailed:
+    en: VF_LonPar3Kids value normalized to a range of 0-1 for respective community
+      archetype (SAC) using Min_Max transformation
+    fr: Valeur VF_LonPar3Kids normalisée à une fourchette de 0-1 pour l’archétype
+      de communauté respectif (CSS) en utilisant la transformation Min_Max.
+  format: 3
+  name: VFn_LonPar3Kids
+- description:
+    en: Lone Parent Families with 3 Children (threshold)
+    fr: Familles monoparentales avec trois enfants (seuil)
+  detailed:
+    en: Equals one if VF_LonPar3Kids exceeds the indicators threshold value, which
+      is the VF_LonPar3Kids average +1 standard deviation when considering Settled
+      Areas (SAUID) of the same community archetype (SAC).
+    fr: Est égal à un si VF_LonPar3Kids dépasse la valeur seuil des indicateurs, qui
+      est la moyenne de VF_LonPar3Kids + un écart type en considérant les zones habitées
+      (SAUID) du même archétype de communauté (CSS).
+  format: 
+  name: VFt_LonPar3Kids
+- description:
+    en: Percent of Families with more than 5 Members
+    fr: Pourcentage de familles de plus de 5 membres
+  detailed:
+    en: Percent of census families in private households containing more than five
+      persons
+    fr: Pourcentage des familles de recensement dans les ménages privés plus de cinq
+      personnes
+  format: 555
+  name: VF_FamGT5
+- description:
+    en: Families with more than 5 Members (normalized)
+    fr: Familles de plus de 5 membres (normalisées)
+  detailed:
+    en: VF_FamGT5 value normalized to a range of 0-1 for respective community archetype
+      (SAC) using Min_Max transformation
+    fr: Valeur VF_FamGT5 normalisée à une fourchette de 0-1 pour l’archétype de communauté
+      respectif (CSS) en utilisant la transformation Min_Max.
+  format: 3
+  name: VFn_FamGT5
+- description:
+    en: Families with more than 5 Members (threshold)
+    fr: Familles de plus de 5 membres (seuil)
+  detailed:
+    en: Equals one if VF_FamGT5 exceeds the indicators threshold value, which is the
+      VF_FamGT5 average +1 standard deviation when considering Settled Areas (SAUID)
+      of the same community archetype (SAC).
+    fr: Est égal à un si VF_FamGT5 dépasse la valeur seuil des indicateurs, qui est
+      la moyenne de VF_FamGT5 + un écart type en considérant les zones habitées (SAUID)
+      du même archétype de communauté (CSS).
+  format: 
+  name: VFt_FamGT5
+- description:
+    en: Percent of Population That Moved Within Last Year
+    fr: Pourcentage de la population ayant déménagé au cours de la dernière année
+  detailed:
+    en: Percent of census population in private households who have moved residences
+      within the last year
+    fr: Pourcentage de la population de recensement dans les ménages privés qui ont
+      déménagé au cours de la dernière année
+  format: 555
+  name: VF_MovedLT1
+- description:
+    en: Population Moved Within Last Year (normalized)
+    fr: Population ayant déménagé au cours de la dernière année (normalisée)
+  detailed:
+    en: VF_MovedLT1 value normalized to a range of 0-1 for respective community archetype
+      (SAC) using Min_Max transformation
+    fr: Valeur VF_MovedLT1 normalisée à une fourchette de 0-1 pour l’archétype de
+      communauté respectif (CSS) en utilisant la transformation Min_Max.
+  format: 3
+  name: VFn_MovedLT1
+- description:
+    en: Population Moved Within Last Year (threshold)
+    fr: Population ayant déménagé au cours de la dernière année (seuil)
+  detailed:
+    en: Equals one if VF_MovedLT1 exceeds the indicators threshold value, which is
+      the VF_MovedLT1 average +1 standard deviation when considering Settled Areas
+      (SAUID) of the same community archetype (SAC).
+    fr: Est égal à un si VF_MovedLT1 dépasse la valeur seuil des indicateurs, qui
+      est la moyenne de VF_MovedLT1 + un écart type en considérant les zones habitées
+      (SAUID) du même archétype de communauté (CSS).
+  format: 
+  name: VFt_MovedLT1
+- description:
+    en: Percent of Population Immigrated Within Last 5 Years
+    fr: Pourcentage de la population ayant immigré au cours des 5 dernières années
+  detailed:
+    en: Percent of census population in private households who have immigrated to
+      Canada within the last 5 years
+    fr: Pourcentage de la population de recensement dans les ménages privés qui ont
+      immigré au Canada au cours des cinq dernières années.
+  format: 555
+  name: VF_ImmLT5
+- description:
+    en: Population Immigrated Within Last 5 Years (normalized)
+    fr: Population ayant immigré au cours des 5 dernières années (normalisée)
+  detailed:
+    en: VF_ImmLT5 value normalized to a range of 0-1 for respective community archetype
+      (SAC) using Min_Max transformation
+    fr: Valeur VF_ImmLt5 normalisée à une fourchette de 0-1 pour l’archétype de communauté
+      respectif (CSS) en utilisant la transformation Min_Max.
+  format: 3
+  name: VFn_Imm_LT5
+- description:
+    en: Population Immigrated Within Last 5 Years (threshold)
+    fr: Population ayant immigré au cours des 5 dernières années (seuil)
+  detailed:
+    en: Equals one if VF_ImmLT5 exceeds the indicators threshold value, which is the
+      VF_ImmLT5 average +1 standard deviation when considering Settled Areas (SAUID)
+      of the same community archetype (SAC).
+    fr: Est égal à un si VF_ImmLt5 dépasse la valeur seuil des indicateurs, qui est
+      la moyenne de VF_ImmLt5 + un écart type en considérant les zones habitées (SAUID)
+      du même archétype de communauté (CSS).
+  format: 
+  name: VFt_ImmLT5
+- description:
+    en: Percent of Population with No Fixed Workplace
+    fr: Pourcentage de la population sans lieu de travail fixe
+  detailed:
+    en: Percent of census population in private households with no fixed workplace
+      location
+    fr: Pourcentage de la population de recensement dans les ménages privés sans lieu
+      de travail fixe
+  format: 555
+  name: VF_NoWrkPlace
+- description:
+    en: People with No Fixed Workplace (normalized)
+    fr: Personnes sans lieu de travail fixe (normalisé)
+  detailed:
+    en: VF_NoWrkPlace value normalized to a range of 0-1 for respective community
+      archetype (SAC) using Min_Max transformation
+    fr: Valeur VF_NoWrkPlace normalisée à une fourchette de 0-1 pour l’archétype de
+      communauté respectif (CSS) en utilisant la transformation Min_Max.
+  format: 3
+  name: VFn_NoWrkPlace
+- description:
+    en: People with No Fixed Workplace (threshold)
+    fr: Personnes sans lieu de travail fixe (seuil)
+  detailed:
+    en: Equals one if VF_NoWrkPlace exceeds the indicators threshold value, which
+      is the VF_NoWrkPlace average +1 standard deviation when considering Settled
+      Areas (SAUID) of the same community archetype (SAC).
+    fr: Est égal à un si VF_NoWrkPlace dépasse la valeur seuil des indicateurs, qui
+      est la moyenne de VF_NoWrkPlace + un écart type en considérant les zones habitées
+      (SAUID) du même archétype de communauté (CSS).
+  format: 
+  name: VFt_NoWrkPlace
+- description:
+    en: Individual Autonomy Score
+    fr: Résultat d’autonomie individuelle
+  detailed:
+    en: Number of individual autonomy indicators that exceed their assocaited indicators
+      threhold values for the community archetype.
+    fr: Nombre d’indicateurs d’autonomie individuelle qui dépassent les valeurs seuils
+      des indicateurs associés pour l’archétype de communauté.
+  format: 
+  name: VAt_Score
+- description:
+    en: Percent of Population With No Knowledge of English/French
+    fr: Pourcentage de la population n’ayant aucune connaissance de l’anglais ou du
+      français
+  detailed:
+    en: Percent of total population (excluding institutional residents) who do not
+      have knowledge and proficiency in one of Canada’s official languages
+    fr: Pourcentage de la population totale (sauf les résidents institutionnels) n’ayant
+      ni connaissance ni maîtrise de l’une des langues officielles du Canada.
+  format: 555
+  name: VA_NoEngFr
+- description:
+    en: No Knowledge of English/French (normalized)
+    fr: Aucune connaissance de l’anglais ou du français (normalisé)
+  detailed:
+    en: VA_NoEngFr value normalized to a range of 0-1 for respective community archetype
+      (SAC) using Min_Max transformation
+    fr: Valeur VA_NoEngFr normalisée à une fourchette de 0-1 pour l’archétype de communauté
+      respectif (CSS) en utilisant la transformation Min_Max.
+  format: 3
+  name: VAn_NoEngFr
+- description:
+    en: No Knowledge of English/French (threshold)
+    fr: Aucune connaissance de l’anglais ou du français (seuil)
+  detailed:
+    en: Equals one if VA_NoEngFr exceeds the indicators threshold value, which is
+      the VA_NoEngFr average +1 standard deviation when considering Settled Areas
+      (SAUID) of the same community archetype (SAC).
+    fr: Est égal à un si VA_NoEngFr dépasse la valeur seuil des indicateurs, qui est
+      la moyenne de VA_NoEngFr + un écart type en considérant les zones habitées (SAUID)
+      du même archétype de communauté (CSS).
+  format: 
+  name: VAt_NoEngFr
+- description:
+    en: Percent of Population With No Secondary School Education
+    fr: Pourcentage de la population sans études secondaires
+  detailed:
+    en: Percent of the population in private households 25-64 years of age with no
+      certificate, diploma or degree granted by a secondary school institution
+    fr: Pourcentage de la population des ménages privés âgés de 25 à 64 ans sans certificat,
+      diplôme ou grade délivré par un établissement d’études secondaires
+  format: 555
+  name: VA_NoSecED
+- description:
+    en: No Secondary School Education (normalized)
+    fr: Aucune étude secondaire (normalisé)
+  detailed:
+    en: VA_NoSecEd value normalized to a range of 0-1 for respective community archetype
+      (SAC) using Min_Max transformation
+    fr: Valeur VA_NoSecEd normalisée à une fourchette de 0-1 pour l’archétype de communauté
+      respectif (CSS) en utilisant la transformation Min_Max.
+  format: 3
+  name: VAn_NoSecED
+- description:
+    en: No Secondary School Education (threshold)
+    fr: Aucune étude secondaire (seuil)
+  detailed:
+    en: Equals one if VA_NoSecEd exceeds the indicators threshold value, which is
+      the VA_NoSecEd average +1 standard deviation when considering Settled Areas
+      (SAUID) of the same community archetype (SAC).
+    fr: Est égal à un si VA_NoSecEd dépasse la valeur seuil des indicateurs, qui est
+      la moyenne de VA_NoSecEd + un écart type en considérant les zones habitées (SAUID)
+      du même archétype de communauté (CSS).
+  format: 
+  name: VAt_NoSecED
+- description:
+    en: Percent of Population Older than 65 Years
+    fr: Pourcentage de la population âgée de plus de 65 ans
+  detailed:
+    en: Percent of the population in private households who are 65 years of age or
+      older
+    fr: Pourcentage de la population des ménages privés âgée de plus de 65 ans
+  format: 555
+  name: VA_AgeGT65
+- description:
+    en: Older than 65 Years (normalized)
+    fr: Plus de 65 ans (normalisé)
+  detailed:
+    en: VA_AgeGT65 value normalized to a range of 0-1 for respective community archetype
+      (SAC) using Min_Max transformation
+    fr: Valeur VA_AgeGT65 normalisée à une fourchette de 0-1 pour l’archétype de communauté
+      respectif (CSS) en utilisant la transformation Min_Max.
+  format: 3
+  name: VAn_AgeGT65
+- description:
+    en: Older than 65 Years (threshold)
+    fr: Plus de 65 ans (seuil)
+  detailed:
+    en: Equals one if VA_AgeGT65 exceeds the indicators threshold value, which is
+      the VA_AgeGT65 average +1 standard deviation when considering Settled Areas
+      (SAUID) of the same community archetype (SAC).
+    fr: Est égal à un si VA_AgeGT65 dépasse la valeur seuil des indicateurs, qui est
+      la moyenne de VA_AgeGT65 + un écart type en considérant les zones habitées (SAUID)
+      du même archétype de communauté (CSS).
+  format: 
+  name: VAt_AgeGT65
+- description:
+    en: Percent of Population Younger than 6 Years
+    fr: Pourcentage de la population âgée de moins de 6 ans
+  detailed:
+    en: Percent of the population in private households who are 6 years of age or
+      younger
+    fr: Pourcentage de la population des ménages privés âgée de moins de 6 ans
+  format: 555
+  name: VA_AgeLT6
+- description:
+    en: Younger than 6 Years (normalized)
+    fr: Moins de 6 ans (normalisé)
+  detailed:
+    en: VA_AgeLT6 value normalized to a range of 0-1 for respective community archetype
+      (SAC) using Min_Max transformation
+    fr: Valeur VA_AgeLT6 normalisée à une fourchette de 0-1 pour l’archétype de communauté
+      respectif (CSS) en utilisant la transformation Min_Max.
+  format: 3
+  name: VAn_AgeLT6
+- description:
+    en: Younger than 6 Years (threshold)
+    fr: Moins de 6 ans (seuil)
+  detailed:
+    en: Equals one if VA_AgeLT6 exceeds the indicators threshold value, which is the
+      VA_AgeLT6 average +1 standard deviation when considering Settled Areas (SAUID)
+      of the same community archetype (SAC).
+    fr: Est égal à un si VA_AgeLT6 dépasse la valeur seuil des indicateurs, qui est
+      la moyenne de VA_AgeLT6 + un écart type en considérant les zones habitées (SAUID)
+      du même archétype de communauté (CSS).
+  format: 
+  name: VAt_AgeLT6
+- description:
+    en: Percent of Population With Indigenous Heritage
+    fr: Pourcentage de la population ayant un patrimoine autochtone
+  detailed:
+    en: Percent of the population in private households who self-identify with the
+      Aboriginal peoples of Canada, including First Nations (North American Indian),
+      Metis or Inuk (Inuit) and/or those Registered under the Indian Act of Canada
+    fr: Pourcentage de la population des ménages privés qui s’identifie en tant qu’Autochtone
+      du Canada, dont les Premières Nations (Indiens d’Amérique du Nord), les Métis
+      ou les Inuits et  les personnes inscrites en vertu de la Loi sur les Indiens.
+  format: 555
+  name: VA_Indigenous
+- description:
+    en: Indigenous Heritage (normalized)
+    fr: Patrimoine autochtone (normalisé)
+  detailed:
+    en: VA_Indigenous value normalized to a range of 0-1 for respective community
+      archetype (SAC) using Min_Max transformation
+    fr: Valeur VA_Indigenous normalisée à une fourchette de 0-1 pour l’archétype de
+      communauté respectif (CSS) en utilisant la transformation Min_Max.
+  format: 3
+  name: VAn_Indigenous
+- description:
+    en: Indigenous Heritage (threshold)
+    fr: Patrimoine autochtone (seuil)
+  detailed:
+    en: Equals one if VA_Indigenous exceeds the indicators threshold value, which
+      is the VA_Indigenous average +1 standard deviation when considering Settled
+      Areas (SAUID) of the same community archetype (SAC).
+    fr: Est égal à un si VA_Indigenous dépasse la valeur seuil des indicateurs, qui
+      est la moyenne de VA_Indigenous + un écart type en considérant les zones habitées
+      (SAUID) du même archétype de communauté (CSS).
+  format: 
+  name: VAt_Indigenous
+- description:
+    en: Percent of Population that are a Visible Minority
+    fr: Pourcentage de la population appartenant à une minorité visible
+  detailed:
+    en: Percent of the population in private households who belong to a visible minority
+      group as defined by the Employment Equity Act of Canada (South Asian, Chinese,
+      Black, Filipino, Latin American, Arab, Southeast Asian, West Asian, Korean and
+      Japanese)
+    fr: Pourcentage de la population dans les ménages privés qui appartient à un groupe
+      de minorité visible tel que défini par la Loi sur l’équité en matière d’emploi
+      du Canada (Asiatique du Sud, Chinois, Noir, Philippin, Latino-Américain, Arabe,
+      Asiatique du Sud-Est, Asiatique de l’Ouest, Coréen et Japonais).
+  format: 555
+  name: VA_VisMinority
+- description:
+    en: Visible Minority (normalized)
+    fr: Minorité visible (normalisé)
+  detailed:
+    en: VA_VisMinority value normalized to a range of 0-1 for respective community
+      archetype (SAC) using Min_Max transformation
+    fr: Valeur VA_VisMinority normalisée à une fourchette de 0-1 pour l’archétype
+      de communauté respectif (CSS) en utilisant la transformation Min_Max.
+  format: 3
+  name: VAn_VisMinority
+- description:
+    en: Visible Minority (threshold)
+    fr: Minorité visible (seuil)
+  detailed:
+    en: Equals one if VA_VisMinority exceeds the indicators threshold value, which
+      is the VA_VisMinority average +1 standard deviation when considering Settled
+      Areas (SAUID) of the same community archetype (SAC).
+    fr: Est égal à un si VA_VisMinority dépasse la valeur seuil des indicateurs, qui
+      est la moyenne de VA_VisMinority + un écart type en considérant les zones habitées
+      (SAUID) du même archétype de communauté (CSS).
+  format: 
+  name: VAt_VisMinority
+- description:
+    en: Median Age of Population
+    fr: Âge médian de la population
+  detailed:
+    en: Median age of total census population
+    fr: Âge médian de la population totale du recensement
+  format: 
+  name: VA_AgeMedian
+- description:
+    en: Median Age (normalized)
+    fr: Âge médian (normalisé)
+  detailed:
+    en: VA_AgeMedian value normalized to a range of 0-1 for respective community archetype
+      (SAC) using Min_Max transformation
+    fr: Valeur VA_AgeMedian normalisée à une fourchette de 0-1 pour l’archétype de
+      communauté respectif (CSS) en utilisant la transformation Min_Max.
+  format: 3
+  name: VAn_AgeMedian
+- description:
+    en: Median Age (threshold)
+    fr: Âge médian (seuil)
+  detailed:
+    en: Equals one if VA_AgeMedian exceeds the indicators threshold value, which is
+      the VA_AgeMedian average +1 standard deviation when considering Settled Areas
+      (SAUID) of the same community archetype (SAC).
+    fr: Est égal à un si VA_AgeMedian dépasse la valeur seuil des indicateurs, qui
+      est la moyenne de VA_AgeMedian + un écart type en considérant les zones habitées
+      (SAUID) du même archétype de communauté (CSS).
+  format: 
+  name: VAt_AgeMedian
+- description:
+    en: Percent Health Care Workers
+    fr: Pourcentage de travailleurs de la santé
+  detailed:
+    en: Percent of population 15 years and over employed in healthcare and/or social
+      assistance fields
+    fr: Pourcentage de la population de 15 ans et plus employée dans les domaines
+      de la santé et de l’aide sociale
+  format: 555
+  name: VA_Health
+- description:
+    en: Health Care Workers (normalized)
+    fr: Travailleurs de la santé (normalisé)
+  detailed:
+    en: VA_Health value normalized to a range of 0-1 for respective community archetype
+      (SAC) using Min_Max transformation
+    fr: Valeur VA_Health normalisée à une fourchette de 0-1 pour l’archétype de communauté
+      respectif (CSS) en utilisant la transformation Min_Max.
+  format: 3
+  name: VAn_Health
+- description:
+    en: Health Care Workers (threshold)
+    fr: Travailleurs de la santé (seuil)
+  detailed:
+    en: Equals one if VA_Health exceeds the indicators threshold value, which is the
+      VA_Health average +1 standard deviation when considering Settled Areas (SAUID)
+      of the same community archetype (SAC).
+    fr: Est égal à un si VA_Health dépasse la valeur seuil des indicateurs, qui est
+      la moyenne de VA_Health + un écart type en considérant les zones habitées (SAUID)
+      du même archétype de communauté (CSS).
+  format: 
+  name: VAt_Health
+- description:
+    en: Percent Population Using Public Transit
+    fr: Pourcentage de la population utilisant les transports en commun
+  detailed:
+    en: Percent of population in private households who rely on public transit to
+      commute to work or school
+    fr: Pourcentage de la population des ménages privés utilisant les transports en
+      commun pour se rendre au travail ou à l’école.
+  format: 555
+  name: VA_PubTrans
+- description:
+    en: Public Transit (normalized)
+    fr: Transports en commun (normalisé)
+  detailed:
+    en: VA_PubTrans value normalized to a range of 0-1 for respective community archetype
+      (SAC) using Min_Max transformation
+    fr: Valeur VA_PubTrans normalisée à une fourchette de 0-1 pour l’archétype de
+      communauté respectif (CSS) en utilisant la transformation Min_Max.
+  format: 3
+  name: VAn_PubTrans
+- description:
+    en: Public Transit (threshold)
+    fr: Transports en commun (seuil)
+  detailed:
+    en: Equals one if VA_PubTrans exceeds the indicators threshold value, which is
+      the VA_PubTrans average +1 standard deviation when considering Settled Areas
+      (SAUID) of the same community archetype (SAC).
+    fr: Est égal à un si VA_PubTrans dépasse la valeur seuil des indicateurs, qui
+      est la moyenne de VA_PubTrans + un écart type en considérant les zones habitées
+      (SAUID) du même archétype de communauté (CSS).
+  format: 
+  name: VAt_PubTrans
+- description:
+    en: Financial Agency Score
+    fr: Note de l’organisme financier
+  detailed:
+    en: Number of financial agency indicators that exceed their assocaited indicators
+      threhold values for the community archetype.
+    fr: Nombre d’indicateurs d’organisme financier qui dépassent les valeurs seuils
+      des indicateurs associés pour l’archétype de communauté.
+  format: 
+  name: VEt_Score
+- description:
+    en: Percent of Households Where Shelter Costs Exceed 30% of Income
+    fr: Pourcentage de ménages dont les frais de logement dépassent 30 % du revenu
+  detailed:
+    en: Percent of private households that spend more than 30% of income on shelter
+      costs (mortgage payments, property taxes and condominium fees, along with the
+      costs of electricity, heat, water and other municipal services)
+    fr: Pourcentage de ménages privés qui consacrent plus de 30 % de leur revenu aux
+      frais de logement (paiements hypothécaires, impôts fonciers et frais de copropriété,
+      ainsi que les frais d’électricité, de chauffage, d’eau et autres services municipaux).
+  format: 555
+  name: VE_ShltrGT30
+- description:
+    en: Shelter Costs Exceed 30% of Income (normalized)
+    fr: Frais de logement dépassant 30 % du revenu (normalisé)
+  detailed:
+    en: VE_ShltrGT30 value normalized to a range of 0-1 for respective community archetype
+      (SAC) using Min_Max transformation
+    fr: Valeur VE_ShltGT30 normalisée à une fourchette de 0-1 pour l’archétype de
+      communauté respectif (CSS) en utilisant la transformation Min_Max.
+  format: 3
+  name: VEn_ShltrGT30
+- description:
+    en: Shelter Costs Exceed 30% of Income (threshold)
+    fr: Frais de logement dépassant 30 % du revenu (seuil)
+  detailed:
+    en: Equals one if VE_ShltrGT30 exceeds the indicators threshold value, which is
+      the VE_ShltrGT30 average +1 standard deviation when considering Settled Areas
+      (SAUID) of the same community archetype (SAC).
+    fr: Est égal à un si VE_ShltGT30 dépasse la valeur seuil des indicateurs, qui
+      est la moyenne de VE_ShltGT30 + un écart type en considérant les zones habitées
+      (SAUID) du même archétype de communauté (CSS).
+  format: 
+  name: VEt_ShltrGT30
+- description:
+    en: Percent of Households in Lower Income Decile
+    fr: Pourcentage de ménages dans le décile de faible revenu
+  detailed:
+    en: Percent of low income economic families based on the Low-Income Cut-Offs,
+      After Tax (LICO-AT), and adjusted based on 35 cut-off thresholds for seven family
+      sizes and five residential area classes
+    fr: Pourcentage de familles économiques à faible revenu basé sur les seuils de
+      faible revenu, après impôt (SFR-AI), et ajusté sur la base de 35 seuils pour
+      sept tailles de famille et cinq classes de zones résidentielles.
+  format: 555
+  name: VE_LowIncDec
+- description:
+    en: Lower Income Decile (normalized)
+    fr: Décile de faible revenu (normalisé)
+  detailed:
+    en: VE_LowIncDec value normalized to a range of 0-1 for respective community archetype
+      (SAC) using Min_Max transformation
+    fr: Valeur VE_LowIncDec normalisée à une fourchette de 0-1 pour l’archétype de
+      communauté respectif (CSS) en utilisant la transformation Min_Max.
+  format: 3
+  name: VEn_LowIncDec
+- description:
+    en: Lower Income Decile (threshold)
+    fr: Décile de faible revenu (seuil)
+  detailed:
+    en: Equals one if VE_LowIncDec exceeds the indicators threshold value, which is
+      the VE_LowIncDec average +1 standard deviation when considering Settled Areas
+      (SAUID) of the same community archetype (SAC).
+    fr: Est égal à un si VE_LowIncDec dépasse la valeur seuil des indicateurs, qui
+      est la moyenne de VE_LowIncDec + un écart type en considérant les zones habitées
+      (SAUID) du même archétype de communauté (CSS).
+  format: 
+  name: VEt_LowIncDec
+- description:
+    en: Percent of Labour Force Population that is Unemployed
+    fr: Pourcentage de la population active sans travail
+  detailed:
+    en: Percent of population 15 years and over in private households who were without
+      work but were available for it (May 1-7, 2016)
+    fr: Pourcentage de la population de 15 ans et plus dans les ménages privés qui
+      était sans travail mais disponible pour celui-ci (1erau 7 mai 2016).
+  format: 555
+  name: VE_Unemployed
+- description:
+    en: Unemployed Labour Force (normalized)
+    fr: Population active sans travail (normalisée)
+  detailed:
+    en: VE_Unemployed value normalized to a range of 0-1 for respective community
+      archetype (SAC) using Min_Max transformation
+    fr: Valeur VE_Unemployed normalisée à une fourchette de 0-1 pour l’archétype de
+      communauté respectif (CSS) en utilisant la transformation Min_Max.
+  format: 3
+  name: VEn_Unemployed
+- description:
+    en: Unemployed Labour Force (threshold)
+    fr: Population active sans travail (seuil)
+  detailed:
+    en: Equals one if VE_Unemployed exceeds the indicators threshold value, which
+      is the VE_Unemployed average +1 standard deviation when considering Settled
+      Areas (SAUID) of the same community archetype (SAC).
+    fr: Est égal à un si VE_Unemployed dépasse la valeur seuil des indicateurs, qui
+      est la moyenne de VE_Unemployed + un écart type en considérant les zones habitées
+      (SAUID) du même archétype de communauté (CSS).
+  format: 
+  name: VEt_Unemployed
+- description:
+    en: Percent of Population That Receives Employment Income
+    fr: Pourcentage de la population qui touche un revenu d’emploi
+  detailed:
+    en: Percent of population 15 years and over in private households who received
+      employment income as wages, salaries and commissions from paid employment and
+      net self-employment income from farm or non-farm unincorporated business and/or
+      professional practice during 2015.
+    fr: Pourcentage de la population de 15 ans et plus dans les ménages privés qui
+      ont touché un revenu d’emploi sous forme de salaires, traitements et commissions
+      provenant d’un emploi rémunéré et un revenu net de travail indépendant provenant
+      d’une entreprise agricole ou non agricole non constituée en société ou d’un
+      cabinet professionnel en 2015.
+  format: 555
+  name: VE_IncEmploy
+- description:
+    en: Receives Employment Income (normalized)
+    fr: Touche un revenu d’emploi (normalisé)
+  detailed:
+    en: VE_IncEmploy value normalized to a range of 0-1 for respective community archetype
+      (SAC) using Min_Max transformation
+    fr: Valeur VE_IncEmploy normalisée à une fourchette de 0-1 pour l’archétype de
+      communauté respectif (CSS) en utilisant la transformation Min_Max.
+  format: 3
+  name: VEn_IncEmploy
+- description:
+    en: Receives Employment Income (threshold)
+    fr: Touche un revenu de l’emploi (seuil)
+  detailed:
+    en: Equals one if VE_IncEmploy exceeds the indicators threshold value, which is
+      the VE_IncEmploy average +1 standard deviation when considering Settled Areas
+      (SAUID) of the same community archetype (SAC).
+    fr: Est égal à un si VE_IncEmploy dépasse la valeur seuil des indicateurs, qui
+      est la moyenne de VE_IncEmploy + un écart type en considérant les zones habitées
+      (SAUID) du même archétype de communauté (CSS).
+  format: 
+  name: VEt_IncEmploy
+- description:
+    en: Median Average Individual Income
+    fr: Revenu personnel moyen médian
+  detailed:
+    en: Median average individual income of population 15 years and over in private
+      households for 2015
+    fr: Revenu personnel moyen médian de la population de 15 ans et plus dans les
+      ménages privés en 2015
+  format: 444
+  name: VE_IndivInc
+- description:
+    en: Average Individual Income (normalized)
+    fr: Revenu personnel moyen (normalisé)
+  detailed:
+    en: VE_IndivInc value normalized to a range of 0-1 for respective community archetype
+      (SAC) using Min_Max transformation
+    fr: Valeur VE_Indivinc normalisée à une fourchette de 0-1 pour l’archétype de
+      communauté respectif (CSS) en utilisant la transformation Min_Max.
+  format: 3
+  name: VEn_IndivInc
+- description:
+    en: Average Individual Income (threshold)
+    fr: Revenu personnel moyen (seuil)
+  detailed:
+    en: Equals one if VE_IndivInc exceeds the indicators threshold value, which is
+      the VE_IndivInc average +1 standard deviation when considering Settled Areas
+      (SAUID) of the same community archetype (SAC).
+    fr: Est égal à un si Valeur VE_Indivinc dépasse la valeur seuil des indicateurs,
+      qui est la moyenne de Valeur VE_Indivinc + un écart type en considérant les
+      zones habitées (SAUID) du même archétype de communauté (CSS).
+  format: 
+  name: VEt_IndivInc
+- description:
+    en: Median Average Household Income
+    fr: Revenu moyen médian du ménage
+  detailed:
+    en: Median total houshold income of families in private households for 2015
+    fr: Revenu total médian des familles dans les ménages privés en 2015
+  format: 444
+  name: VE_HshldInc
+- description:
+    en: Average Household Income (normalized)
+    fr: Revenu moyen du ménage (normalisé)
+  detailed:
+    en: VE_HshldInc value normalized to a range of 0-1 for respective community archetype
+      (SAC) using Min_Max transformation
+    fr: Valeur VE_HshldInc normalisée à une fourchette de 0-1 pour l’archétype de
+      communauté respectif (CSS) en utilisant la transformation Min_Max.
+  format: 3
+  name: VEn_HshldInc
+- description:
+    en: Average Household Income (threshold)
+    fr: Revenu moyen du ménage (seuil)
+  detailed:
+    en: Equals one if VE_HshldInc exceeds the indicators threshold value, which is
+      the VE_HshldInc average +1 standard deviation when considering Settled Areas
+      (SAUID) of the same community archetype (SAC).
+    fr: Est égal à un si VE_HshldInc dépasse la valeur seuil des indicateurs, qui
+      est la moyenne de VE_HshldInc + un écart type en considérant les zones habitées
+      (SAUID) du même archétype de communauté (CSS).
+  format: 
+  name: VEt_HshldInc
+- description:
+    en: Percent Retail Workers
+    fr: Pourcentage de travailleurs du commerce de détail
+  detailed:
+    en: Percent of population 15 years and over in private households that is working
+      in the retail trade sector in 2015
+    fr: Pourcentage de la population de 15 ans et plus dans les ménages privés qui
+      travaille dans le secteur du commerce de détail en 2015
+  format: 555
+  name: VE_Retail
+- description:
+    en: Retail Workers (normalized)
+    fr: Travailleurs du commerce de détail (normalisé)
+  detailed:
+    en: VE_Retail value normalized to a range of 0-1 for respective community archetype
+      (SAC) using Min_Max transformation
+    fr: Valeur VE_Retail normalisée à une fourchette de 0-1 pour l’archétype de communauté
+      respectif (CSS) en utilisant la transformation Min_Max.
+  format: 3
+  name: VEn_Retail
+- description:
+    en: Retail Workers (threshold)
+    fr: Travailleurs du commerce de détail (seuil)
+  detailed:
+    en: Equals one if VE_Retail exceeds the indicators threshold value, which is the
+      VE_Retail average +1 standard deviation when considering Settled Areas (SAUID)
+      of the same community archetype (SAC).
+    fr: Est égal à un si VE_Retail dépasse la valeur seuil des indicateurs, qui est
+      la moyenne de VE_Retail + un écart type en considérant les zones habitées (SAUID)
+      du même archétype de communauté (CSS).
+  format: 
+  name: VEt_Retail
+- description:
+    en: Percent Did Not Work
+    fr: Pourcentage qui ne travaillait pas
+  detailed:
+    en: Percent of population 15 years and over in private households that did not
+      work in 2015
+    fr: Pourcentage de la population de 15 ans et plus dans les ménages privés qui
+      ne travaillaient pas en 2015.
+  format: 555
+  name: VE_WorkNone
+- description:
+    en: No Work (normalized)
+    fr: Ne travaillant pas (normalisé)
+  detailed:
+    en: VE_WorkNone value normalized to a range of 0-1 for respective community archetype
+      (SAC) using Min_Max transformation
+    fr: Valeur VE_WorkNone normalisée à une fourchette de 0-1 pour l’archétype de
+      communauté respectif (CSS) en utilisant la transformation Min_Max.
+  format: 3
+  name: VEn_WorkNone
+- description:
+    en: No Work (threshold)
+    fr: Ne travaillant pas (seuil)
+  detailed:
+    en: Equals one if VE_WorkNone exceeds the indicators threshold value, which is
+      the VE_WorkNone average +1 standard deviation when considering Settled Areas
+      (SAUID) of the same community archetype (SAC).
+    fr: Est égal à un si VE_WorkNone dépasse la valeur seuil des indicateurs, qui
+      est la moyenne de VE_WorkNone + un écart type en considérant les zones habitées
+      (SAUID) du même archétype de communauté (CSS).
+  format: 
+  name: VEt_WorkNone
+- description:
+    en: Percent Part Time Work
+    fr: Pourcentage travaillant à temps partiel
+  detailed:
+    en: Percent of population 15 years and over in private households that worked
+      part time in 2015
+    fr: Pourcentage de la population de 15 ans et plus dans les ménages privés qui
+      travaillaient à temps partiel en 2015.
+  format: 555
+  name: VE_WorkPart
+- description:
+    en: Part Time (normalized)
+    fr: Temps partiel (normalisé)
+  detailed:
+    en: VE_WorkPart value normalized to a range of 0-1 for respective community archetype
+      (SAC) using Min_Max transformation
+    fr: Valeur VE_WorkPart normalisée à une fourchette de 0-1 pour l’archétype de
+      communauté respectif (CSS) en utilisant la transformation Min_Max.
+  format: 3
+  name: VEn_WorkPart
+- description:
+    en: Part Time (threshold)
+    fr: Temps partiel (seuil)
+  detailed:
+    en: Equals one if VE_WorkPart exceeds the indicators threshold value, which is
+      the VE_WorkPart average +1 standard deviation when considering Settled Areas
+      (SAUID) of the same community archetype (SAC).
+    fr: Est égal à un si VE_WorkPart dépasse la valeur seuil des indicateurs, qui
+      est la moyenne de VE_WorkPart + un écart type en considérant les zones habitées
+      (SAUID) du même archétype de communauté (CSS).
+  format: 
+  name: VEt_WorkPart
+- description:
+    en: Province or Territory ID
+    fr: ID de la province ou du territoire
+  detailed:
+    en: Unique identifier for province or territory.
+    fr: Identifiant unique de la province ou du territoire
+  format: 
+  name: pruid
+- description:
+    en: Province or Territory Name
+    fr: Nom de la province ou du territoire
+  detailed:
+    en: Province or Territory name
+    fr: Nom de la province ou du territoire
+  format: 
+  name: prname
+- description:
+    en: Census Economic Region ID
+    fr: ID de la région économique du recensement
+  detailed:
+    en: Unique identifier for economic region
+    fr: Identifiant unique de la région économique
+  format: 
+  name: eruid
+- description:
+    en: Census Economic Region name
+    fr: Nom de la région économique du recensement
+  detailed:
+    en: Census Economic Region name
+    fr: Nom de la région économique du recensement
+  format: 
+  name: ername
+- description:
+    en: Census Division ID
+    fr: ID de la division de recensement
+  detailed:
+    en: Unique identifier for census division
+    fr: Identifiant unique de la division de recensement
+  format: 
+  name: cduid
+- description:
+    en: Census Division name
+    fr: Nom de la division de recensement
+  detailed:
+    en: Census division name
+    fr: Nom de la division de recensement
+  format: 
+  name: cdname
+- description:
+    en: Census Subdivision ID
+    fr: ID de la subdivision de recensement
+  detailed:
+    en: Unique identifier for census subdivision
+    fr: Identifiant unique de la subdivision de recensement
+  format: 
+  name: csduid
+- description:
+    en: Census Subdivision name
+    fr: Nom de la subdivision de recensement
+  detailed:
+    en: Census subdivision name
+    fr: Nom de la subdivision de recensement
+  format: 
+  name: csdname
+- description:
+    en: Forward Sorting Area ID
+    fr: ID de la région de tri d’acheminement
+  detailed:
+    en: Unique identifier for forward sorting area
+    fr: Identifiant unique de la région de tri d’acheminement
+  format: 
+  name: fsauid
+- description:
+    en: Dissemination Area ID
+    fr: ID de l’aire de diffusion
+  detailed:
+    en: Unique identifier for dissemination area
+    fr: Identifiant unique de l’aire de diffusion
+  format: 
+  name: dauid
+- description:
+    en: Statistical Area Classification
+    fr: Classification des secteurs statistiques
+  detailed:
+    en: 3-digit Statisical Area Classification code
+    fr: Code à trois chiffres de la classification des secteurs statistiques
+  format: 
+  name: saccode
+- description:
+    en: Statistical Area Classification Type
+    fr: Type de classification des secteurs statistiques
+  detailed:
+    en: The Statistical Area Classification groups census subdivisions according to
+      whether they are a component of a census metropolitan area, a census agglomeration,
+      a census metropolitan influenced zone or the territories.
+    fr: La classification des secteurs statistiques regroupe les subdivisions de recensement
+      selon qu’elles sont une composante d’une région métropolitaine de recensement,
+      d’une agglomération de recensement, d’une zone d’influence métropolitaine de
+      recensement ou des territoires
+  format: 
+  name: sactype

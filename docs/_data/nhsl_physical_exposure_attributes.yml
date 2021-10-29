@@ -1,0 +1,596 @@
+# Format: - positive numbers are number of decimal places to display
+#         - negative numbers round to that power of ten (ie. 3 would round to 1,000s)
+#         - 111 rounds to whole number
+#         - 444 for dollars and cents
+#         - 555 converts decimal to percentage
+
+attributes:
+- description:
+    en: Population Density
+    fr: Densité de Population
+  detailed:
+    en: Population Density
+    fr: Densité de Population
+  name: Et_PopNight___E_AreaHa
+  format: 2
+- description:
+    en: Building Assets per Hectare
+    fr: Actifs de construction par hectare
+  detailed:
+    en: Building Assets per Hectare
+    fr: Actifs de construction par hectare
+  name: Et_AssetValue___E_AreaHa
+  format: 444
+- description:
+    en: Building Density
+    fr: Densité de construction
+  detailed:
+    en: Building Density
+    fr: Densité de construction
+  name: Et_BldgNum___E_AreaHa
+  format: 2
+- description:
+    en: Settled Area ID
+    fr: Identification de la zone habitée
+  detailed:
+    en: Unique identification code assiged to the Settled Area (SAUID), which represents
+      the approximate footprint of permanent buildings within standard census dissemination
+      areas (DAUID)
+    fr: Code d’identification unique attribué à la zone habitée (SAUID), qui représente
+      l’empreinte approximative des immeubles permanents dans les aires de diffusion
+      standard du recensement (DAUID).
+  name: Sauid
+  format: 
+- description:
+    en: Longitude
+    fr: Longitude
+  detailed:
+    en: Degree of longitude at centroid of Settled Area (SAUID) polygon
+    fr: Degré de longitude au centroïde du polygone de la zone habitée (SAUID)
+  name: E_SauidLon
+  format: 
+- description:
+    en: Latitude
+    fr: Latitude
+  detailed:
+    en: Degree of latitude at centroid of Settled Area (SAUID) polygon
+    fr: Degré de latitude au centroïde du polygone de la zone habitée (SAUID)
+  name: E_SauidLat
+  format: 
+- description:
+    en: Settled Area (km2)
+    fr: Zone Habitée (en km2)
+  detailed:
+    en: Land area in square kilometres represented by Settled Area (SAUID) polygon.
+    fr: Superficie terrestre en kilomètres carrés représentée par le polygone de la
+      zone habitée (SAUID)
+  name: E_AreaKm2
+  format: 2
+- description:
+    en: Settled Area (hectares)
+    fr: Zone Habitée (en hectares)
+  detailed:
+    en: Land area in hectares represented by Settled Area (SAUID) polygon.
+    fr: Superficie en hectares représentée par le polygone de la zone habitée (SAUID)
+  name: E_AreaHa
+  format: 2
+- description:
+    en: Statistical Area Classification
+    fr: Classification des secteurs statistiques
+  detailed:
+    en: Standard Statisical Area Classificaiton for the Settled Area (SAUID).
+    fr: Classification des secteurs statistiques standard pour la zone habitée (SAUID)
+  name: E_SAC
+  format: 
+- description:
+    en: Seismic Source Region
+    fr: Région de la source sismique
+  detailed:
+    en: Seismic source region, includes either East or West
+    fr: Région de la source sismique, soit l’Est soit l’Ouest
+  name: E_SSRegion
+  format: 
+- description:
+    en: Land Use Class
+    fr: Catégorie d’utilisation des terres
+  detailed:
+    en: Assigned land use for the Settled Area (SAUID) based on population density,
+      census housing characteristics and NAICS industry codes. One of residential-high,
+      -medium, or -low density; mixed use; commercial industrial; or rural.
+    fr: 'Utilisation des terres attribuées de la zone habitée (SAUID) en fonction
+      de la densité de population, des caractéristiques des logements du recensement
+      et des codes industriels du SCIAN. L’une des catégories suivantes : résidentielle
+      à densité élevée, moyenne ou faible; utilisation mixte; commerciale et industrielle;
+      ou rurale'
+  name: E_LandUse
+  format: 
+- description:
+    en: Finished building area
+    fr: Superficie des immeubles finis
+  detailed:
+    en: Estimated square footage for all structures in building stock inventory (Et_BldgArea)
+    fr: Estimation de la superficie en pieds carrés de toutes les structures du stock
+      du répertoire immobilier (Et_BldgArea)
+  name: Et_BldgArea
+  format: 111
+- description:
+    en: Residential Building Area
+    fr: Superficie des immeubles résidentiels
+  detailed:
+    en: Estimated square footage for residential structures in the building stock
+      inventory (Et_BldgNum)
+    fr: Estimation de la superficie en pieds carrés des structures résidentielles
+      du stock du répertoire immobilier (Et_BldgNum)
+  name: Et_BldgAreaRes
+  format: 111
+- description:
+    en: Commercial Building Area
+    fr: Superficie des immeubles commerciaux
+  detailed:
+    en: Estimated square footage for commercial structures in the building stock inventory
+      (Et_BldgNum)
+    fr: Estimation de la superficie en pieds carrés des structures commerciales du
+      stock du répertoire immobilier (Et_BldgNum)
+  name: Et_BldgAreaComm
+  format: 111
+- description:
+    en: Industrial Building Area
+    fr: Superficie des immeubles industriels
+  detailed:
+    en: Estimated square footage for industrial structures in the building stock inventory
+      (Et_BldgNum)
+    fr: Estimation de la superficie en pieds carrés des structures industrielles du
+      stock du répertoire immobilier (Et_BldgNum)
+  name: Et_BldgAreaInd
+  format: 111
+- description:
+    en: Civic Building Area
+    fr: Superficie des immeubles municipaux
+  detailed:
+    en: Estimated square footage for civic structures in the building stock inventory
+      (Et_BldgNum)
+    fr: Estimation de la superficie en pieds carrés des structures municipales du
+      stock du répertoire immobilier (Et_BldgNum)
+  name: Et_BldgAreaCivic
+  format: 111
+- description:
+    en: Agricultural Building Area
+    fr: Superficie des immeubles agricoles
+  detailed:
+    en: Estimated square footage for agricultural structures in the building stock
+      inventory (Et_BldgNum)
+    fr: Estimation de la superficie en pieds carrés des structures agricoles du stock
+      du répertoire immobilier (Et_BldgNum)
+  name: Et_BldgAreaAgr
+  format: 111
+- description:
+    en: Building Inventory Total
+    fr: Total du répertoire immobilier
+  detailed:
+    en: Estimated number of buildings within Settled Areas (SAUID)
+    fr: Estimation du nombre d’immeubles dans les régions peuplées (SAUID)
+  name: Et_BldgNum
+  format: 
+- description:
+    en: Census Buildings
+    fr: Immeubles du recensement
+  detailed:
+    en: 2016 building count reported at census block level
+    fr: Nombre d’immeubles en 2016 signalés au niveau des îlots de recensement
+  name: E_CensusBldg
+  format: 
+- description:
+    en: Census Population
+    fr: Population du recensement
+  detailed:
+    en: 2016 population count reported at census block level
+    fr: Nombre de personnes en 2016 signalées au niveau des îlots de recensement
+  name: E_CensusPop
+  format: 
+- description:
+    en: Census Dwelling Units
+    fr: Unités de logement du recensement
+  detailed:
+    en: 2016 dwelling count reported at census dissemination area (DAUID) level
+    fr: Nombre de logements en 2016 signalés au niveau de l’aire de diffusion du recensement
+      (DAUID)
+  name: E_CensusDU
+  format: 
+- description:
+    en: People per Dwelling
+    fr: Personnes par logement
+  detailed:
+    en: 2016 population per private household reported at census dissemination area
+      (DAUID) level
+    fr: Population en 2016 par ménage privé signalée au niveau de l’aire de diffusion
+      du recensement (DAUID)
+  name: E_People_DU
+  format: 
+- description:
+    en: People per square kilometre
+    fr: Personnes par kilomètre carré
+  detailed:
+    en: Estimated average number of nighttime residents per square kilometre (Et_PopNight/E_AreaKm2)
+    fr: Estimation du nombre moyen de résidents nocturnes par kilomètre carré (Et_PopNight/E_AreaKm2)
+  name: Et_Pop_Km2
+  format: 2
+- description:
+    en: People per hectare
+    fr: Personnes par hectare
+  detailed:
+    en: Estimated average number of nighttime residents per hectare (Et_PopNight/E_AreaHa)
+    fr: Estimation du nombre moyen de résidents nocturnes par hectare (Et_PopNight/E_AreaHa)
+  name: Et_PPH
+  format: 2
+- description:
+    en: Buildings per square kilometre
+    fr: Immeubles par kilomètre carré
+  detailed:
+    en: Average number of buidings per square kilometre (Et_BldgNum/E_AreaKm2)
+    fr: Nombre moyen d’immeubles par kilomètre carré (Et_BldgNum/E_AreaKm2)
+  name: Et_Bldg_Km2
+  format: 2
+- description:
+    en: Asset Value per square kilometre
+    fr: Valeur des biens par kilomètre carré
+  detailed:
+    en: Average value of captial assets per square kilometre (Et_AssetValue/E_AreaKm2)
+    fr: Valeur moyenne des biens immobilisés par kilomètre carré (Et_AssetValue/E_AreaKm2)
+  name: Et_Value_Km2
+  format: 444
+- description:
+    en: Low Density Residential Buildings
+    fr: Immeubles résidentiels à faible densité
+  detailed:
+    en: Estimated number of low-density residential buildings within a Settled Area
+      (SAUID)
+    fr: Estimation du nombre d’immeubles résidentiels à faible densité dans une zone
+      habitée (SAUID)
+  name: Et_ResLD
+  format: 
+- description:
+    en: Medium Density Residential Buildings
+    fr: Immeubles résidentiels à densité moyenne
+  detailed:
+    en: Estimated number of medium-density residential buildings within a Settled
+      Area (SAUID)
+    fr: Estimation du nombre d’immeubles résidentiels à densité moyenne dans une zone
+      habitée (SAUID)
+  name: Et_ResMD
+  format: 
+- description:
+    en: High Density Residential Buildings
+    fr: Immeubles résidentiels à densité élevée
+  detailed:
+    en: Estimated number of high-density residential buildings within a Settled Area
+      (SAUID)
+    fr: Estimation du nombre d’immeubles résidentiels à densité élevée dans une zone
+      habitée (SAUID)
+  name: Et_RESHD
+  format: 
+- description:
+    en: Commercial Buildings
+    fr: Immeubles commerciaux
+  detailed:
+    en: Estimated number of commercial buildings within a Settled Area (SAUID)
+    fr: Estimation du nombre d’immeubles commerciaux dans une zone habitée (SAUID)
+  name: Et_Comm
+  format: 
+- description:
+    en: Industrial Buildings
+    fr: Immeubles industriels
+  detailed:
+    en: Estimated number of industrial buildings within a Settled Area (SAUID)
+    fr: Estimation du nombre d’immeubles industriels dans une zone habitée (SAUID)
+  name: Et_Ind
+  format: 
+- description:
+    en: Civic Buildings
+    fr: Immeubles municipaux
+  detailed:
+    en: Estimated number of civic buildings within a Settled Area (SAUID)
+    fr: Estimation du nombre d’immeubles municipaux dans une zone habitée (SAUID)
+  name: Et_Civic
+  format: 
+- description:
+    en: Agricultural Buildings
+    fr: Immeubles agricoles
+  detailed:
+    en: Estimated number of agricultural buildings within a Settled Area (SAUID)
+    fr: Estimation du nombre d’immeubles agricoles dans une zone habitée (SAUID)
+  name: Et_Agr
+  format: 
+- description:
+    en: Single Family Households
+    fr: Ménages unifamiliaux
+  detailed:
+    en: Estimated number of single-family residential buildings within a Settled Area
+      (SAUID)
+    fr: Estimation du nombre d’immeubles résidentiels unifamiliaux dans une zone habitée
+      (SAUID)
+  name: Et_SFHshld
+  format: 2
+- description:
+    en: Multi-Family Households
+    fr: Ménages multifamiliaux
+  detailed:
+    en: Estimated number of multi-family residential buildings within a Settled Area
+      (SAUID)
+    fr: Estimation du nombre d’immeubles résidentiels multifamiliaux dans une zone
+      habitée (SAUID)
+  name: ET_MFHshld
+  format: 2
+- description:
+    en: Wood
+    fr: Bois
+  detailed:
+    en: Estimated number of wood buildings within a Settled Area (SAUID)
+    fr: Estimation du nombre d’immeubles en bois dans une zone habitée (SAUID)
+  name: Et_Wood
+  format: 
+- description:
+    en: Concrete
+    fr: Béton
+  detailed:
+    en: Estimated number of concrete buildings within a Settled Area (SAUID)
+    fr: Estimation du nombre d’immeubles en béton dans une zone habitée (SAUID)
+  name: Et_Concrete
+  format: 
+- description:
+    en: PreCast
+    fr: Préfabriqués
+  detailed:
+    en: Estimated number of pre-cast buildings within a Settled Area (SAUID)
+    fr: Estimation du nombre d’immeubles préfabriqués dans une zone habitée (SAUID)
+  name: Et_PreCast
+  format: 
+- description:
+    en: Reinforced Masonry
+    fr: Maçonnerie armée
+  detailed:
+    en: Estimated number of reinforced masonry buildings within a Settled Area (SAUID)
+    fr: Estimation du nombre d’immeubles en maçonnerie armée dans une zone habitée
+      (SAUID)
+  name: Et_RMasonry
+  format: 
+- description:
+    en: Unreinforced Masonry
+    fr: Maçonnerie non armée
+  detailed:
+    en: Estimated number of unreinforced masonry buildings within a Settled Area (SAUID)
+    fr: Estimation du nombre d’immeubles en maçonnerie non armée dans une zone habitée
+      (SAUID)
+  name: Et_URMasonry
+  format: 
+- description:
+    en: Steel
+    fr: Acier
+  detailed:
+    en: Estimated number of steel buildings within a Settled Area (SAUID)
+    fr: Estimation du nombre d\u0027immeubles à ossature d\u0027acier dans une zone habitée
+      (SAUID)
+  name: Et_Steel
+  format: 
+- description:
+    en: Manufactured
+    fr: Construits
+  detailed:
+    en: Estimated number of manufactured buildings within a Settled Area (SAUID)
+    fr: Estimation du nombre d’immeubles construits dans une zone habitée (SAUID)
+  name: Et_Manufacture
+  format: 
+- description:
+    en: Pre Code Design Level
+    fr: Niveau de conception antérieure au Code
+  detailed:
+    en: Estimated number of buildings classified as pre-code seismic design within
+      a Settled Area (SAUID)
+    fr: Estimation du nombre d’immeubles classés en tant que conception parasismique
+      antérieure au Code dans une zone habitée (SAUID)
+  name: Et_PreCode
+  format: 
+- description:
+    en: Low Code Design Level
+    fr: Niveau de conception faible selon le Code
+  detailed:
+    en: Estimated number of buildings classified as low-code seismic design within
+      a Settled Area (SAUID)
+    fr: Estimation du nombre d’immeubles classés en tant que conception parasismique
+      faible selon le Code dans une zone habitée (SAUID)
+  name: Et_LowCode
+  format: 
+- description:
+    en: Moderate Code Design Level
+    fr: Niveau de conception moyenne selon le Code
+  detailed:
+    en: Estimated number of buildings classified as moderate-code seismic design within
+      a Settled Area (SAUID)
+    fr: Estimation du nombre d’immeubles classés en tant que conception parasismique
+      moyenne selon le Code dans une zone habitée (SAUID)
+  name: Et_ModCode
+  format: 
+- description:
+    en: High Code Design Level
+    fr: Niveau de conception élevée selon le Code
+  detailed:
+    en: Estimated number of buildings classified as high-code seismic design within
+      a Settled Area (SAUID)
+    fr: Estimation du nombre d’immeubles classés en tant que conception parasismique
+      élevée selon le Code dans une zone habitée (SAUID)
+  name: Et_HiCode
+  format: 
+- description:
+    en: Daytime Building Occupancy
+    fr: Occupation diurne des immeubles
+  detailed:
+    en: Estimated population in buildings during standard work hours (09:00-17:00)
+    fr: Estimation de la population occupant des immeubles pendant les heures normales
+      de travail (de 9 h à 17 h)
+  name: Et_PopDay
+  format: 111
+- description:
+    en: Nighttime Building Occupancy
+    fr: Occupation nocturne des immeubles
+  detailed:
+    en: Estimated population in buildings during nighttime hours (20:00-06:00)
+    fr: Estimation de la population occupant des immeubles pendant les heures de nuit
+      (de 20 h à 6 h)
+  name: Et_PopNight
+  format: 111
+- description:
+    en: In Transit Building Occupancy
+    fr: Occupation des immeubles pendant le navettage
+  detailed:
+    en: Estimated population in buildings during morning and evening commute hours
+      (06:00-09:00 and 17:00-20:00)
+    fr: Estimation de la population occupant des immeubles pendant les heures de navettage
+      du matin et du soir (de 6 h à 9 h et de 17 h à 20 h)
+  name: Et_PopTransit
+  format: 111
+- description:
+    en: Capital Asset Value
+    fr: Valeur des biens immobilisés
+  detailed:
+    en: Estimated value of buildings and contents based on industry-standard replacement
+      costs
+    fr: Estimation de la valeur des immeubles et de leur contenu en fonction des coûts
+      de remplacement correspondant aux normes de l’industrie
+  name: Et_AssetValue
+  format: 444
+- description:
+    en: Building Replacement Value
+    fr: Valeur de remplacement des immeubles
+  detailed:
+    en: Estimated total standard replacement cost for structural and nonstructural
+      building components
+    fr: Estimation du coût de remplacement standard total des éléments structurels
+      et non structurels des immeubles
+  name: Et_BldgValue
+  format: 444
+- description:
+    en: Structural Component Value
+    fr: Valeur des éléments structurels
+  detailed:
+    en: Estimated total standard replacement cost for structural building components
+    fr: Estimation du coût de remplacement standard total des éléments structurels
+      des immeubles
+  name: Et_StrValue
+  format: 444
+- description:
+    en: Nonstructural Component Value
+    fr: Valeur des éléments non structurels
+  detailed:
+    en: Estimated total standard replacement cost for nonstructural building components
+    fr: Estimation du coût de remplacement standard total des éléments non structurels
+      des immeubles
+  name: Et_NStrValue
+  format: 444
+- description:
+    en: Content Component Value
+    fr: Valeur des éléments du contenu
+  detailed:
+    en: Estimated total standard replacement cost for building contents
+    fr: Estimation du coût de remplacement standard total du contenu des immeubles
+  name: Et_ContValue
+  format: 444
+- description:
+    en: Province or Territory ID
+    fr: ID de la province ou du territoire
+  detailed:
+    en: Unique identifier for province or territory.
+    fr: Identifiant unique de la province ou du territoire
+  name: pruid
+  format: 
+- description:
+    en: Province or Territory Name
+    fr: Nom de la province ou du territoire
+  detailed:
+    en: Province or Territory name
+    fr: Nom de la province ou du territoire
+  name: prname
+  format: 
+- description:
+    en: Census Economic Region ID
+    fr: ID de la région économique du recensement
+  detailed:
+    en: Unique identifier for economic region
+    fr: Identifiant unique de la région économique
+  name: eruid
+  format: 
+- description:
+    en: Census Economic Region Name
+    fr: Nom de la région économique du recensement
+  detailed:
+    en: Census Economic Region Name
+    fr: Nom de la région économique du recensement
+  name: ername
+  format: 
+- description:
+    en: Census Division ID
+    fr: ID de la division de recensement
+  detailed:
+    en: Unique identifier for census division
+    fr: Identificateur unique de la division de recensement
+  name: cduid
+  format: 
+- description:
+    en: Census Division name
+    fr: Nom de la division de recensement
+  detailed:
+    en: Census division name
+    fr: Nom de la division de recensement
+  name: cdname
+  format: 
+- description:
+    en: Census Subdivision ID
+    fr: ID de la subdivision de recensement
+  detailed:
+    en: Unique identifier for census subdivision
+    fr: Identifiant unique de la subdivision de recensement
+  name: csduid
+  format: 
+- description:
+    en: Census Subdivision name
+    fr: Nom de la subdivision de recensement
+  detailed:
+    en: Census subdivision name
+    fr: Nom de la subdivision de recensement
+  name: csdname
+  format: 
+- description:
+    en: Forward Sorting Area ID
+    fr: ID de la région de tri d’acheminement
+  detailed:
+    en: Unique identifier for forward sorting area
+    fr: Identifiant unique de la région de tri d’acheminement
+  name: fsauid
+  format: 
+- description:
+    en: Dissemination Area ID
+    fr: ID de l’aire de diffusion
+  detailed:
+    en: Unique identifier for dissemination area
+    fr: Identifiant unique de l’aire de diffusion
+  name: dauid
+  format: 
+- description:
+    en: Statistical Area Classification
+    fr: Classification des secteurs statistiques
+  detailed:
+    en: 3-digit Statisical Area Classification code
+    fr: Code à trois chiffres de la classification des secteurs statistiques
+  name: saccode
+  format: 
+- description:
+    en: Statistical Area Classification Type
+    fr: Type de classification des secteurs statistiques
+  detailed:
+    en: The Statistical Area Classification groups census subdivisions according to
+      whether they are a component of a census metropolitan area, a census agglomeration,
+      a census metropolitan influenced zone or the territories.
+    fr: La classification des secteurs statistiques regroupe les subdivisions de recensement
+      selon qu’elles sont une composante d’une région métropolitaine de recensement,
+      d’une agglomération de recensement, d’une zone d’influence métropolitaine de
+      recensement ou des territoires
+  name: sactype
+  format: 
