@@ -64,8 +64,8 @@ attribution:
         _insérer le texte d'attribution_
 datasets:
 - title:
-    en: Social Fabric and Capacity Thresholds
-    fr: Tissu social et seuils de capacité
+    en: Social Vulnerability
+    fr: Vulnérabilité sociale
   description:
     en: |
         The Social Vulnerability component of the National Human Settlement Layer (NHSL) includes information about broad spatial patterns of social vulnerability at the neighbourhood scale, and indicators about the capacities for a community to withstand and recover from disaster events based on intrinsic characteristics of housing, family structure, individual autonomy and financial agency.\n
@@ -87,13 +87,13 @@ datasets:
   - format: ESRI REST
     language: en
     link: https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/social_fabric_en/MapServer
-    name: Social Fabric and Capacity Thresholds (Canada)
+    name: Social Vulnerability (Canada)
     region: ca
     type: Web Service
   - format: ESRI REST
     language: fr
     link: https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/social_fabric_fr/MapServer
-    name: Tissu social et seuils de capacité (Canada)
+    name: Vulnérabilité sociale (Canada)
     region: ca
     type: Web Service
   - format: HTML
@@ -111,7 +111,7 @@ datasets:
   - format: GPKG
     language: en-fr
     link: nhsl_social_fabric_indicators_s.zip
-    name: Social Fabric and Capacity Thresholds (Canada)
+    name: Social Vulnerability (Canada)
     region: ca
     type: Dataset
   - format: EXCEL
@@ -129,79 +129,79 @@ datasets:
   - format: GPKG
     language: en-fr
     link: nhsl_social_fabric_indicators_s_ab.zip
-    name: Social Fabric and Capacity Thresholds (AB)
+    name: Social Vulnerability (AB)
     region: ab
     type: Dataset
   - format: GPKG
     language: en-fr
     link: nhsl_social_fabric_indicators_s_bc.zip
-    name: Social Fabric and Capacity Thresholds (BC)
+    name: Social Vulnerability (BC)
     region: bc
     type: Dataset
   - format: GPKG
     language: en-fr
     link: nhsl_social_fabric_indicators_s_mb.zip
-    name: Social Fabric and Capacity Thresholds (MB)
+    name: Social Vulnerability (MB)
     region: mb
     type: Dataset
   - format: GPKG
     language: en-fr
     link: nhsl_social_fabric_indicators_s_nb.zip
-    name: Social Fabric and Capacity Thresholds (NB)
+    name: Social Vulnerability (NB)
     region: nb
     type: Dataset
   - format: GPKG
     language: en-fr
     link: nhsl_social_fabric_indicators_s_nl.zip
-    name: Social Fabric and Capacity Thresholds (NL)
+    name: Social Vulnerability (NL)
     region: nl
     type: Dataset
   - format: GPKG
     language: en-fr
     link: nhsl_social_fabric_indicators_s_ns.zip
-    name: Social Fabric and Capacity Thresholds (NS)
+    name: Social Vulnerability (NS)
     region: ns
     type: Dataset
   - format: GPKG
     language: en-fr
     link: nhsl_social_fabric_indicators_s_nt.zip
-    name: Social Fabric and Capacity Thresholds (NT)
+    name: Social Vulnerability (NT)
     region: nt
     type: Dataset
   - format: GPKG
     language: en-fr
     link: nhsl_social_fabric_indicators_s_nu.zip
-    name: Social Fabric and Capacity Thresholds (NU)
+    name: Social Vulnerability (NU)
     region: nu
     type: Dataset
   - format: GPKG
     language: en-fr
     link: nhsl_social_fabric_indicators_s_on.zip
-    name: Social Fabric and Capacity Thresholds (ON)
+    name: Social Vulnerability (ON)
     region: 'on'
     type: Dataset
   - format: GPKG
     language: en-fr
     link: nhsl_social_fabric_indicators_s_pe.zip
-    name: Social Fabric and Capacity Thresholds (PE)
+    name: Social Vulnerability (PE)
     region: pe
     type: Dataset
   - format: GPKG
     language: en-fr
     link: nhsl_social_fabric_indicators_s_qc.zip
-    name: Social Fabric and Capacity Thresholds (QC)
+    name: Social Vulnerability (QC)
     region: qc
     type: Dataset
   - format: GPKG
     language: en-fr
     link: nhsl_social_fabric_indicators_s_sk.zip
-    name: Social Fabric and Capacity Thresholds (SK)
+    name: Social Vulnerability (SK)
     region: sk
     type: Dataset
   - format: GPKG
     language: en-fr
     link: nhsl_social_fabric_indicators_s_yt.zip
-    name: Social Fabric and Capacity Thresholds (YT)
+    name: Social Vulnerability (YT)
     region: yt
     type: Dataset
 - title:

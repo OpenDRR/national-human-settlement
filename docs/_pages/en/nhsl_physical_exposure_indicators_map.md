@@ -9,7 +9,7 @@ subject:
   fr: [GV Gouvernement et vie politique, Services gouvernementaux]
 title: Physical Exposure
 lang: en
-altLangPage: ../fr/nhsl_physical_exposure_map
+altLangPage: ../fr/nhsl_physical_exposure_indicators_map
 nositesearch: true
 nomenu: true
 nofooter: true
