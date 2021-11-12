@@ -21,7 +21,7 @@ breadcrumbs:
   - title: "Human Settlement and Natural Hazards in Canada"
     link: "/en/"
   - title: "Physical Exposure"
-    link: "/en/nhsl#physical_exposure"
+    link: "/en/index#physical_exposure"
 ---
 <!-- Load Leaflet from CDN -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"

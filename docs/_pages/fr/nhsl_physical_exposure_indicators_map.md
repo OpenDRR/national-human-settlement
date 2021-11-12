@@ -22,7 +22,7 @@ breadcrumbs:
   - title: "Zones de peuplement et dangers naturels au Canada"
     link: "/fr"
   - title: "Exposition physique"
-    link: "/fr/nhsl#physical_exposure"
+    link: "/fr/index#physical_exposure"
 ---
 <!-- Load Leaflet from CDN -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"

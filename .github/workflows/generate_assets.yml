@@ -3,6 +3,7 @@ name: Create release assets
 on: 
   release:
     types: [created]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -17,3 +18,5 @@ jobs:
         with:
           files: 'physical-exposure/data/*;social-vulnerability/data/*'
           repo-token: ${{ secrets.GITHUB_TOKEN }}
+          # To add assets to an existing release, use below line with release tag, then run action from actions page
+          #release-tag: v1.0
