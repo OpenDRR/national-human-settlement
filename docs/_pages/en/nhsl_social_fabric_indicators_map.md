@@ -21,7 +21,7 @@ breadcrumbs:
   - title: "Human Settlement and Natural Hazards in Canada"
     link: "/en/nhsl"
   - title: "Social Vulnerability"
-    link: "/en/index#social_fabric"
+    link: "/en/index#s#nhsl_social_fabric_indicators-a"
 ---
 <!-- Load Leaflet from CDN -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
