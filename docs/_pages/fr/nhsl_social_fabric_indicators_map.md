@@ -22,7 +22,7 @@ breadcrumbs:
   - title: "Zones de peuplement et dangers naturels au Canada"
     link: "/fr"
   - title: "Vulnérabilité sociale"
-    link: "/fr/index##nhsl_social_fabric_indicators-a"
+    link: "/fr/index#nhsl_social_fabric_indicators-a"
 ---
 <!-- Load Leaflet from CDN -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
