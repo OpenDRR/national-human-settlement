@@ -17,9 +17,9 @@ breadcrumbs:
   - title: "OpenDRR"
     link: "https://www.github.com/OpenDRR/"
   - title: "OpenDRR Downloads"
-    link: "/en"
+    link: "../data/en"
   - title: "Human Settlement and Natural Hazards in Canada"
-    link: "/en/nhsl"
+    link: "/en/"
   - title: "Social Vulnerability"
     link: "/en/index#nhsl_social_fabric_indicators-a"
 ---
