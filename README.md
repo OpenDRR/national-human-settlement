@@ -17,7 +17,7 @@ These datasets have been developed to provide information about physical exposur
 ### Available Datasets
 
 - [Physical Exposure](https://github.com/OpenDRR/national-human-settlement/tree/main/physical-exposure)
-- [Social Vulnerability](https://github.com/OpenDRR/national-human-settlement/tree/main/social-fabric)
+- [Social Fabric and Capacity Thresholds](https://github.com/OpenDRR/national-human-settlement/tree/main/social-fabric)
 
 ## Technical Use
 
