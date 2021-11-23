@@ -17,7 +17,7 @@ breadcrumbs:
   - title: "OpenDRR"
     link: "https://www.github.com/OpenDRR/"
   - title: "OpenDRR Downloads"
-    link: "../data/en"
+    link: "../downloads/en"
   - title: "Human Settlement and Natural Hazards in Canada"
     link: "/en/"
   - title: "Social Fabric and Capacity Thresholds"

@@ -18,7 +18,7 @@ breadcrumbs:
   - title: "OpenDRR"
     link: "https://www.github.com/OpenDRR/"
   - title: "Téléchargements de OpenDRR"
-    link: "../data/fr"
+    link: "../downloads/fr"
   - title: "Zones de peuplement et dangers naturels au Canada"
     link: "/fr"
   - title: "Exposition physique"
