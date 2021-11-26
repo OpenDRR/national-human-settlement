@@ -12,8 +12,8 @@ Information in the model provides a means of comparing relative levels of social
 
 A detailed summary of how the social fabric component of the NHSL was generated, information it’s applications to natural hazards risk assessment are provided within the following Geological Survey of Canada Open File Report: Journeay, M., Yip, C., Wagner, C., LeSueur, P., and Hobbs, T. Social Determinants of Natural Hazard Threat in Canada. Geological Survey of Canada, OpenFile XXX.
 
-We recommend that anyone who intendeds to use the datasets review this documentation.  
+We recommend that anyone who intends to use the datasets review this documentation.  
 
 ## A Note on Acceptable Use
 
-The physical exposure model approximately represents the current building stock in Canada, and has been derived using a combination of best practices, available national-scale information, and judgement, but is subject to uncertainty. This model is not intended for site-specific assessment, and in general is expected to be more representative of actual conditions at higher scales of aggregation. The model is also based on information gathered from 2016 to 2020, and will be updated as new information becomes available. For any questions on the appropriate use of these data, please contact our team.
+_insert acceptable use text_
