@@ -412,26 +412,26 @@ datasets:
         Les bâtiments sont classés en fonction du type de construction, de l’occupation et de l’âge. Ces classes sont basées sur la taxonomie normalisée HAZUS des bâtiments de l’Amérique du Nord. On compte 38 classes de construction représentant différents types de bois, de béton, de maçonnerie, d’acier et de structures préfabriquées; 33 classes d’occupation représentant une variété d’utilisations résidentielles, civiques, commerciales et industrielles; et 4 classes d’âge représentant le niveau présumé de conception du bâtiment. La distribution des « archétypes de bâtiments » obtenus est attribuée à des régions habitées en fonction de l’utilisation du sol et des caractéristiques du recensement.\n
         Le nombre d’occupants des bâtiments à différents moments de la journée est estimé pour les trois périodes suivantes : le jour (de 9 h à 17 h), pendant les déplacements domicile-travail du matin et du soir (de 7 h à 9 h et de 17 h à 19 h) et la nuit, lorsque la majorité des gens sont à la maison (de 19 h à 7 h).\n
         La valeur en capital des biens immobiliers est fournie pour les éléments structurels et non structurels des bâtiments, ainsi que pour le contenu potentiel du bâtiment. La valeur des biens est estimée en fonction des coûts de remplacement de l’industrie pour des régions représentatives du Canada."
-documentation:
-  title:
-    en: Documentation
-    fr: Documentation
-  body:
-    en: |
-        A detailed summary of how the physical exposure model was generated, information it’s applications to natural hazards risk assessment, and key findings about the status of physical exposure to natural hazards in Canada is provided within the following Geological Survey of Canada Open File Report:/n
-        Journeay, M., LeSueur, P., Chow, C., and Wagner, W. Physical Exposure to Natural Hazards in Canada. Geological Survey of Canada, OpenFile XXX. /n
-        We recommend that anyone who intendeds to use the datasets review this documentation. 
-    fr: |
-        _insérer de la documentation et/ou des liens_
-acceptable:
-  title:
-    en: A Note on Acceptable Use
-    fr: Une note sur l'utilisation acceptable
-  body:
-    en: |
-        The physical exposure model approximately represents the current building stock in Canada, and has been derived using a combination of best practices, available national-scale information, and judgement, but is subject to uncertainty. This model is not intended for site-specific assessment, and in general is expected to be more representative of actual conditions at higher scales of aggregation. The model is also based on information gathered from 2016 to 2020, and will be updated as new information becomes available. For any questions on the appropriate use of these data, please contact our team.
-    fr: |
-        _insérer le texte sur l'utilisation acceptable_
+  documentation:
+    title:
+      en: Documentation
+      fr: Documentation
+    body:
+      en: |
+          A detailed summary of how the physical exposure model was generated, information it’s applications to natural hazards risk assessment, and key findings about the status of physical exposure to natural hazards in Canada is provided within the following Geological Survey of Canada Open File Report:/n
+          Journeay, M., LeSueur, P., Chow, C., and Wagner, W. Physical Exposure to Natural Hazards in Canada. Geological Survey of Canada, OpenFile XXX. /n
+          We recommend that anyone who intendeds to use the datasets review this documentation. 
+      fr: |
+          _insérer de la documentation et/ou des liens_
+  acceptable:
+    title:
+      en: A Note on Acceptable Use
+      fr: Une note sur l'utilisation acceptable
+    body:
+      en: |
+          The physical exposure model approximately represents the current building stock in Canada, and has been derived using a combination of best practices, available national-scale information, and judgement, but is subject to uncertainty. This model is not intended for site-specific assessment, and in general is expected to be more representative of actual conditions at higher scales of aggregation. The model is also based on information gathered from 2016 to 2020, and will be updated as new information becomes available. For any questions on the appropriate use of these data, please contact our team.
+      fr: |
+          _insérer le texte sur l'utilisation acceptable_
   id: nhsl_physical_exposure_indicators
   folder: physical-exposure
   header:
