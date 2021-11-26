@@ -32,12 +32,12 @@ technical:
         Il est possible de télécharger des fichiers individuels à partir du Web, en cliquant sur "Raw" ou "Download" dans le coin supérieur droit de la page d'aperçu d'un fichier. Pour ceux qui souhaitent cloner ce dépôt, veuillez vous assurer que Git LFS est activé sur votre machine avant de procéder au clonage.
 datasets:
 - title:
-    en: Social Vulnerability
+    en: Social Fabric
     fr: Vulnérabilité sociale
   description:
     en: |
         The Social Vulnerability component of the National Human Settlement Layer (NHSL) includes information about broad spatial patterns of social vulnerability at the neighbourhood scale, and indicators about the capacities for a community to withstand and recover from disaster events based on intrinsic characteristics of housing, family structure, individual autonomy and financial agency.\n
-        The social vulnerability index and capacity threshold indicators help to identify underlying patterns of social vulnerability within a given community. The model includes six composite indicators that describe the estimated total social vulnerability, and vulnerability level that might arise due to housing conditions, family structure, individual autonomy and financial agency. The model provide a means of comparing relative levels of vulnerability from one region to another across Canada and help identify specific neighbourhoods within which capacities to withstand and recover from disaster events may be strained.
+        Information in the model provides a means of comparing relative levels of social vulnerability from one region to another across Canada and helps to identify specific dimensions within a community that contributes to their relative levels of social vulnerability. This information is not intended for site-specific study, but instead to understand broad patterns of social characteristics and vulnerability across multiple census dissemination areas.
     fr: |
         L’élément « Vulnérabilité sociale » de la couche ZPN comprend des renseignements sur les grandes tendances spatiales en matière de vulnérabilité sociale à l’échelle du quartier, ainsi que des indicateurs sur la capacité d’une collectivité à résister aux catastrophes, et à s’en rétablir, en fonction des caractéristiques intrinsèques du logement, de la structure familiale, de l’autonomie individuelle et des systèmes financiers.\n
         Les indicateurs de la vulnérabilité sociale et du seuil de capacité permettent de cerner les tendances sous-jacentes en matière de vulnérabilité sociale au sein d’une collectivité donnée. Le modèle comprend six indicateurs composites qui décrivent la vulnérabilité sociale totale estimée, ainsi que le niveau de vulnérabilité qui pourrait découler des conditions de logement, de la structure familiale, de l’autonomie individuelle et des systèmes financiers. Le modèle permet donc de comparer les niveaux relatifs de vulnérabilité d’une région à l’autre dans l’ensemble du Canada et de déterminer les quartiers dans lesquels la capacité de résister aux catastrophes, et de s’en rétablir, peut être restreinte.
@@ -47,7 +47,9 @@ datasets:
     fr: Documentation
   body:
     en: |
-        _insert documentation and/or links_
+        A detailed summary of how the social fabric component of the NHSL was generated, information it’s applications to natural hazards risk assessment are provided within the following Geological Survey of Canada Open File Report:/n
+        Journeay, M., Yip, C., Wagner, C., LeSueur, P., and Hobbs, T. Social Determinants of Natural Hazard Threat in Canada. Geological Survey of Canada, OpenFile XXX. /n
+        We recommend that anyone who intendeds to use the datasets review this documentation. 
     fr: |
         _insérer de la documentation et/ou des liens_
   id: nhsl_social_fabric_indicators
