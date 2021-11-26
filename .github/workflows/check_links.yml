@@ -2,6 +2,8 @@ name: Check for dead links
 
 on: 
   push:
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:

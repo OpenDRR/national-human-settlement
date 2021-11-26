@@ -16,7 +16,7 @@ jobs:
       - name: upload assets
         uses: AButler/upload-release-assets@v2.0
         with:
-          files: 'physical-exposure/data/*;social-vulnerability/data/*'
+          files: 'physical-exposure/data/*;social-fabric/data/*'
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           # To add assets to an existing release, use below line with release tag, then run action from actions page
           #release-tag: v1.0

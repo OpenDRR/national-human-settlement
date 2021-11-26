@@ -19,7 +19,7 @@ Ces ensembles de données ont été élaborés pour fournir des renseignements s
 ### Ensembles de données disponibles
 
 - [Exposition physique](https://github.com/OpenDRR/national-human-settlement/tree/main/physical-exposure)
-- [Vulnérabilité sociale](https://github.com/OpenDRR/national-human-settlement/tree/main/social-vulnerability)
+- [Tissu social et seuils de capacité](https://github.com/OpenDRR/national-human-settlement/tree/main/social-fabric)
 
 ## Utilisation technique
 

@@ -7,7 +7,7 @@ pageclass: wb-prettify all-pre
 subject:
   en: [GV Government and Politics, Government services]
   fr: [GV Gouvernement et vie politique, Services gouvernementaux]
-title: Vulnérabilité sociale
+title: Tissu social et seuils de capacité
 lang: fr
 altLangPage: ../en/nhsl_social_fabric_indicators_map
 nositesearch: true
@@ -21,7 +21,7 @@ breadcrumbs:
     link: "../data/fr"
   - title: "Zones de peuplement et dangers naturels au Canada"
     link: "/fr"
-  - title: "Vulnérabilité sociale"
+  - title: "Tissu social et seuils de capacité"
     link: "/fr/index#nhsl_social_fabric_indicators-a"
 ---
 <!-- Load Leaflet from CDN -->

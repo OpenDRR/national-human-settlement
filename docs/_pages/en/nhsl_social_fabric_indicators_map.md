@@ -7,7 +7,7 @@ pageclass: wb-prettify all-pre
 subject:
   en: [GV Government and Politics, Government services]
   fr: [GV Gouvernement et vie politique, Services gouvernementaux]
-title: Social Vulnerability
+title: Social Fabric and Capacity Thresholds
 lang: en
 altLangPage: ../fr/nhsl_social_fabric_indicators_map
 nositesearch: true
@@ -20,7 +20,7 @@ breadcrumbs:
     link: "../data/en"
   - title: "Human Settlement and Natural Hazards in Canada"
     link: "/en/"
-  - title: "Social Vulnerability"
+  - title: "Social Fabric and Capacity Thresholds"
     link: "/en/index#nhsl_social_fabric_indicators-a"
 ---
 <!-- Load Leaflet from CDN -->
