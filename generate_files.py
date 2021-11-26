@@ -42,13 +42,7 @@ for lang in ['en', 'fr']:
         nhsl_yml['header'][lang] + description + '\n'
     readme += '### ' + nhsl_yml['sets'][lang] + '\n\n' + datasets + '\n'
     readme += '## ' + nhsl_yml['technical']['title'][lang] + \
-        '\n\n' + nhsl_yml['technical']['body'][lang] + '\n'
-    readme += '## ' + nhsl_yml['documentation']['title'][lang] + \
-        '\n\n' + nhsl_yml['documentation']['body'][lang] + '\n'
-    readme += '## ' + nhsl_yml['acceptable']['title'][lang] + \
-        '\n\n' + nhsl_yml['acceptable']['body'][lang] + '\n'
-    readme += '## ' + nhsl_yml['attribution']['title'][lang] + \
-        '\n\n' + nhsl_yml['attribution']['body'][lang]
+        '\n\n' + nhsl_yml['technical']['body'][lang]
 
     # Write to file
     with open(filename, 'w', encoding='utf-8') as f:
@@ -61,5 +55,9 @@ for lang in ['en', 'fr']:
 
         # Write file
         with open(f'./{set["folder"]}/{filename}', 'w', encoding='utf-8') as f:
-            f.write(link_start + set["folder"] + link_end + '\n' + set['header']
-                    [lang] + ' ' + set["title"][lang] + '\n\n' + description)
+            f.write(link_start + set["folder"] + link_end + '\n' + set['header'][lang] +
+                    ' ' + set["title"][lang] + '\n\n' + description + '\n' +
+                    '## ' + set['documentation']['title'][lang] +
+                    '\n\n' + set['documentation']['body'][lang] +
+                    '\n' + '## ' + set['acceptable']['title'][lang] +
+                    '\n\n' + set['acceptable']['body'][lang])

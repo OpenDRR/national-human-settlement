@@ -42,16 +42,25 @@ datasets:
         L’élément « Vulnérabilité sociale » de la couche ZPN comprend des renseignements sur les grandes tendances spatiales en matière de vulnérabilité sociale à l’échelle du quartier, ainsi que des indicateurs sur la capacité d’une collectivité à résister aux catastrophes, et à s’en rétablir, en fonction des caractéristiques intrinsèques du logement, de la structure familiale, de l’autonomie individuelle et des systèmes financiers.\n
         Les indicateurs de la vulnérabilité sociale et du seuil de capacité permettent de cerner les tendances sous-jacentes en matière de vulnérabilité sociale au sein d’une collectivité donnée. Le modèle comprend six indicateurs composites qui décrivent la vulnérabilité sociale totale estimée, ainsi que le niveau de vulnérabilité qui pourrait découler des conditions de logement, de la structure familiale, de l’autonomie individuelle et des systèmes financiers. Le modèle permet donc de comparer les niveaux relatifs de vulnérabilité d’une région à l’autre dans l’ensemble du Canada et de déterminer les quartiers dans lesquels la capacité de résister aux catastrophes, et de s’en rétablir, peut être restreinte.
   documentation:
-  title:
-    en: Documentation
-    fr: Documentation
-  body:
-    en: |
-        A detailed summary of how the social fabric component of the NHSL was generated, information it’s applications to natural hazards risk assessment are provided within the following Geological Survey of Canada Open File Report:/n
-        Journeay, M., Yip, C., Wagner, C., LeSueur, P., and Hobbs, T. Social Determinants of Natural Hazard Threat in Canada. Geological Survey of Canada, OpenFile XXX. /n
-        We recommend that anyone who intendeds to use the datasets review this documentation. 
-    fr: |
-        _insérer de la documentation et/ou des liens_
+    title:
+      en: Documentation
+      fr: Documentation
+    body:
+      en: |
+        A detailed summary of how the social fabric component of the NHSL was generated, information it’s applications to natural hazards risk assessment are provided within the following Geological Survey of Canada Open File Report: Journeay, M., Yip, C., Wagner, C., LeSueur, P., and Hobbs, T. Social Determinants of Natural Hazard Threat in Canada. Geological Survey of Canada, OpenFile XXX.
+        
+        We recommend that anyone who intendeds to use the datasets review this documentation.  
+      fr: |
+          _insérer de la documentation et/ou des liens_
+  acceptable:
+    title:
+      en: A Note on Acceptable Use
+      fr: Une note sur l'utilisation acceptable
+    body:
+      en: |
+          The physical exposure model approximately represents the current building stock in Canada, and has been derived using a combination of best practices, available national-scale information, and judgement, but is subject to uncertainty. This model is not intended for site-specific assessment, and in general is expected to be more representative of actual conditions at higher scales of aggregation. The model is also based on information gathered from 2016 to 2020, and will be updated as new information becomes available. For any questions on the appropriate use of these data, please contact our team.
+      fr: |
+          _insérer le texte sur l'utilisation acceptable_
   id: nhsl_social_fabric_indicators
   folder: social-fabric
   header:
@@ -418,8 +427,8 @@ datasets:
       fr: Documentation
     body:
       en: |
-          A detailed summary of how the physical exposure model was generated, information it’s applications to natural hazards risk assessment, and key findings about the status of physical exposure to natural hazards in Canada is provided within the following Geological Survey of Canada Open File Report:/n
-          Journeay, M., LeSueur, P., Chow, C., and Wagner, W. Physical Exposure to Natural Hazards in Canada. Geological Survey of Canada, OpenFile XXX. /n
+          A detailed summary of how the physical exposure model was generated, information it’s applications to natural hazards risk assessment, and key findings about the status of physical exposure to natural hazards in Canada is provided within the following Geological Survey of Canada Open File Report: Journeay, M., LeSueur, P., Chow, C., and Wagner, W. Physical Exposure to Natural Hazards in Canada. Geological Survey of Canada, OpenFile XXX.
+
           We recommend that anyone who intendeds to use the datasets review this documentation. 
       fr: |
           _insérer de la documentation et/ou des liens_

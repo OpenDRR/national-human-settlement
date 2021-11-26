@@ -19,22 +19,8 @@ Ces ensembles de données ont été élaborés pour fournir des renseignements s
 ### Ensembles de données disponibles
 
 - [Exposition physique](https://github.com/OpenDRR/national-human-settlement/tree/main/physical-exposure)
-- [Tissu social et seuils de capacité](https://github.com/OpenDRR/national-human-settlement/tree/main/social-fabric)
+- [Tissu social](https://github.com/OpenDRR/national-human-settlement/tree/main/social-fabric)
 
 ## Utilisation technique
 
 Il est possible de télécharger des fichiers individuels à partir du Web, en cliquant sur "Raw" ou "Download" dans le coin supérieur droit de la page d'aperçu d'un fichier. Pour ceux qui souhaitent cloner ce dépôt, veuillez vous assurer que Git LFS est activé sur votre machine avant de procéder au clonage.
-
-## Documentation
-
-_insérer de la documentation et/ou des liens_
-
-## Une note sur l'utilisation acceptable
-
-_insérer le texte sur l'utilisation acceptable_
-
-## Attribution
-
-Si vous utilisez l'un de ces ensembles de données, veuillez inclure la référence à tout ouvrage cité dans la description de l'ensemble de données ainsi que la référence à l'ensemble de données lui-même. La citation suivante doit être utilisée :
-
-_insérer le texte d'attribution_
