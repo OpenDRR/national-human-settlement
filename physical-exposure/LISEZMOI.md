@@ -13,3 +13,11 @@ Les bâtiments sont classés en fonction du type de construction, de l’occupat
 Le nombre d’occupants des bâtiments à différents moments de la journée est estimé pour les trois périodes suivantes : le jour (de 9 h à 17 h), pendant les déplacements domicile-travail du matin et du soir (de 7 h à 9 h et de 17 h à 19 h) et la nuit, lorsque la majorité des gens sont à la maison (de 19 h à 7 h).
 
 La valeur en capital des biens immobiliers est fournie pour les éléments structurels et non structurels des bâtiments, ainsi que pour le contenu potentiel du bâtiment. La valeur des biens est estimée en fonction des coûts de remplacement de l’industrie pour des régions représentatives du Canada."
+
+## Documentation
+
+_insérer de la documentation et/ou des liens_
+
+## Une note sur l'utilisation acceptable
+
+_insérer le texte sur l'utilisation acceptable_
