@@ -87,13 +87,13 @@ datasets:
     type: Web Service
   - format: HTML
     language: en
-    link: https://geo-api.stage.riskprofiler.ca/collections/opendrr_nhsl_social_fabric_indicators_s?lang=en_US
+    link: https://geo-api.riskprofiler.ca/collections/opendrr_nhsl_social_fabric_indicators_s?lang=en_US
     name: Social Vulnerability Index and Capacity Threshold Indicators (Canada)
     region: ca
     type: Web Service
   - format: HTML
     language: fr
-    link: https://geo-api.stage.riskprofiler.ca/collections/opendrr_nhsl_social_fabric_indicators_s?lang=fr-CA
+    link: https://geo-api.riskprofiler.ca/collections/opendrr_nhsl_social_fabric_indicators_s?lang=fr-CA
     name: Les Indicateurs de la Vulnérabilité Sociale et du Seuil de Capacité (Canada)
     region: ca
     type: Web Service
@@ -468,25 +468,25 @@ datasets:
     type: Web Service
   - format: HTML
     language: en
-    link: https://geo-api.stage.riskprofiler.ca/collections/opendrr_nhsl_physical_exposure_indicators_s?lang=en_US
+    link: https://geo-api.riskprofiler.ca/collections/opendrr_nhsl_physical_exposure_indicators_s?lang=en_US
     name: Physical Exposure polygon geometry (Canada)
     region: ca
     type: Web Service
   - format: HTML
     language: fr
-    link: https://geo-api.stage.riskprofiler.ca/collections/opendrr_nhsl_physical_exposure_indicators_s?lang=fr-CA
+    link: https://geo-api.riskprofiler.ca/collections/opendrr_nhsl_physical_exposure_indicators_s?lang=fr-CA
     name: Géométrie des polygones du exposition physique (Canada)
     region: ca
     type: Web Service
   - format: HTML
     language: en
-    link: https://geo-api.stage.riskprofiler.ca/collections/opendrr_nhsl_physical_exposure_indicators_b?lang=en_US
+    link: https://geo-api.riskprofiler.ca/collections/opendrr_nhsl_physical_exposure_indicators_b?lang=en_US
     name: Physical Exposure point geometry (Canada)
     region: ca
     type: Web Service
   - format: HTML
     language: fr
-    link: https://geo-api.stage.riskprofiler.ca/collections/opendrr_nhsl_physical_exposure_indicators_b?lang=fr-CA
+    link: https://geo-api.riskprofiler.ca/collections/opendrr_nhsl_physical_exposure_indicators_b?lang=fr-CA
     name: Géométrie des pointes du exposition physique (Canada)
     region: ca
     type: Web Service
