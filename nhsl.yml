@@ -57,15 +57,6 @@ datasets:
           Journeay, M., Yip, J Z K., Wagner, C., LeSueur, P., and Hobbs, T. Social vulnerability to natural hazards in Canada. Geological Survey of Canada, OpenFile 8902. https://doi.org/10.4095/330295. \n
 
           Nous recommandons à toute personne ayant l’intention d’utiliser les ensembles de données de consulter cette documentation.
-  acceptable:
-    title:
-      en: A Note on Acceptable Use
-      fr: Une note sur l'utilisation acceptable
-    body:
-      en: |
-          _insert acceptable use text_
-      fr: |
-          _insérer le texte sur l'utilisation acceptable_
   id: nhsl_social_fabric_indicators
   folder: social-fabric
   header:
