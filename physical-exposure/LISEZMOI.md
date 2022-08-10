@@ -14,7 +14,9 @@ Au total, le modèle caractérise 35,2 millions de personnes dans 9,7 millions
 
 ## Documentation
 
-Un résumé détaillé de la façon dont le « modèle d’exposition physique » a été produit et de l’information sur ses applications à l’évaluation des risques de dangers naturels et des résultats clés sur l’état de l’exposition physique aux dangers naturels au Canada est fourni dans le rapport suivant de la Commission géologique du Canada :
+Un résumé détaillé de la façon dont le « modèle d’exposition physique » a été produit et de l’information sur ses applications à l’évaluation des risques de dangers naturels et des résultats clés sur l’état de l’exposition physique aux dangers naturels au Canada est fourni dans le rapport suivant de la Commission géologique du Canada : 
+
+Journeay, M., LeSueur, P., Chow, C., and Wagner, W. Physical Exposure to Natural Hazards in Canada. Geological Survey of Canada, OpenFile 8892. https://doi.org/10.4095/330012. 
 
 Nous recommandons à toute personne ayant l’intention d’utiliser les ensembles de données de consulter cette documentation.
 

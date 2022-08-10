@@ -4,16 +4,16 @@ Auto-généré à partir de nhsl.yml
 
 # Zones de peuplement au niveau national - Tissu social
 
-L’élément « Vulnérabilité sociale » de la couche ZPN comprend des renseignements sur les grandes tendances spatiales en matière de vulnérabilité sociale à l’échelle du quartier, ainsi que des indicateurs sur la capacité d’une collectivité à résister aux catastrophes, et à s’en rétablir, en fonction des caractéristiques intrinsèques du logement, de la structure familiale, de l’autonomie individuelle et des systèmes financiers.
-
-Les renseignements contenus dans le modèle permettent de comparer les niveaux relatifs de vulnérabilité sociale d’une région à l’autre partout au Canada et aident à déterminer les dimensions particulières d’une collectivité qui contribuent à ses niveaux relatifs de vulnérabilité sociale. Ces renseignements ne sont pas destinés à une étude particulière à un site, mais plutôt à comprendre les grands schémas des caractéristiques sociales et de la vulnérabilité dans plusieurs zones de diffusion du recensement.
+L’élément « Vulnérabilité sociale » de la couche ZPN comprend des renseignements sur les grandes tendances spatiales en matière de vulnérabilité sociale à l’échelle du quartier, ainsi que des indicateurs sur la capacité d’une collectivité à résister aux catastrophes, et à s’en rétablir, en fonction des caractéristiques intrinsèques du logement, de la structure familiale, de l’autonomie individuelle et des systèmes financiers.   
 
 ## Documentation
 
-Un résumé détaillé de la façon dont l’élément « tissu social » de la couche ZPN a été produit et de l’information sur ses applications à l’évaluation des risques de catastrophes naturelles est fourni dans le rapport de dossier public de la Commission géologique du Canada qui suit :
+Un résumé détaillé de la façon dont l’élément « tissu social » de la couche ZPN a été produit et de l’information sur ses applications à l’évaluation des risques de catastrophes naturelles est fourni dans le rapport de dossier public de la Commission géologique du Canada qui suit : 
+
+Journeay, M., Yip, J Z K., Wagner, C., LeSueur, P., and Hobbs, T. Social vulnerability to natural hazards in Canada. Geological Survey of Canada, OpenFile 8902. https://doi.org/10.4095/330295. 
 
 Nous recommandons à toute personne ayant l’intention d’utiliser les ensembles de données de consulter cette documentation.
 
 ## Une note sur l'utilisation acceptable
 
-_insérer le texte sur l'utilisation acceptable_
+Les renseignements contenus dans le modèle permettent de comparer les niveaux relatifs de vulnérabilité sociale d’une région à l’autre partout au Canada et aident à déterminer les dimensions particulières d’une collectivité qui contribuent à ses niveaux relatifs de vulnérabilité sociale. Ces renseignements ne sont pas destinés à une étude particulière à un site, mais plutôt à comprendre les grands schémas des caractéristiques sociales et de la vulnérabilité dans plusieurs zones de diffusion du recensement.
