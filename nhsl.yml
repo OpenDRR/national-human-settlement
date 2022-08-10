@@ -44,15 +44,15 @@ datasets:
       fr: Documentation
     body:
       en: |
-          A detailed summary of how the social fabric component of the NHSL was generated, information it’s applications to natural hazards risk assessment are provided within the following Geological Survey of Canada Open File Report: \n
+          A detailed summary of how the social fabric component of the NHSL was generated, information it’s applications to natural hazards risk assessment are provided within the following Geological Survey of Canada Open File Report:
 
-          Journeay, M., Yip, J Z K., Wagner, C., LeSueur, P., and Hobbs, T. Social vulnerability to natural hazards in Canada. Geological Survey of Canada, OpenFile 8902. https://doi.org/10.4095/330295. \n
+          Journeay, M., Yip, J Z K., Wagner, C., LeSueur, P., and Hobbs, T. Social vulnerability to natural hazards in Canada. Geological Survey of Canada, OpenFile 8902. https://doi.org/10.4095/330295.
         
           We recommend that anyone who intends to use the datasets review this documentation.  
       fr: |
-          Un résumé détaillé de la façon dont l’élément « tissu social » de la couche ZPN a été produit et de l’information sur ses applications à l’évaluation des risques de catastrophes naturelles est fourni dans le rapport de dossier public de la Commission géologique du Canada qui suit : \n
+          Un résumé détaillé de la façon dont l’élément « tissu social » de la couche ZPN a été produit et de l’information sur ses applications à l’évaluation des risques de catastrophes naturelles est fourni dans le rapport de dossier public de la Commission géologique du Canada qui suit : 
 
-          Journeay, M., Yip, J Z K., Wagner, C., LeSueur, P., and Hobbs, T. Social vulnerability to natural hazards in Canada. Geological Survey of Canada, OpenFile 8902. https://doi.org/10.4095/330295. \n
+          Journeay, M., Yip, J Z K., Wagner, C., LeSueur, P., and Hobbs, T. Social vulnerability to natural hazards in Canada. Geological Survey of Canada, OpenFile 8902. https://doi.org/10.4095/330295. 
 
           Nous recommandons à toute personne ayant l’intention d’utiliser les ensembles de données de consulter cette documentation.
   acceptable:
@@ -429,15 +429,15 @@ datasets:
       fr: Documentation
     body:
       en: |
-          A detailed summary of how the physical exposure model was generated, information it’s applications to natural hazards risk assessment, and key findings about the status of physical exposure to natural hazards in Canada is provided within the following Geological Survey of Canada Open File Report: \n 
+          A detailed summary of how the physical exposure model was generated, information it’s applications to natural hazards risk assessment, and key findings about the status of physical exposure to natural hazards in Canada is provided within the following Geological Survey of Canada Open File Report:  
 
-          Journeay, M., LeSueur, P., Chow, C., and Wagner, W. Physical Exposure to Natural Hazards in Canada. Geological Survey of Canada, OpenFile 8892. https://doi.org/10.4095/330012. \n
+          Journeay, M., LeSueur, P., Chow, C., and Wagner, W. Physical Exposure to Natural Hazards in Canada. Geological Survey of Canada, OpenFile 8892. https://doi.org/10.4095/330012.
 
           We recommend that anyone who intends to use the datasets review this documentation. 
       fr: |
-          Un résumé détaillé de la façon dont le « modèle d’exposition physique » a été produit et de l’information sur ses applications à l’évaluation des risques de dangers naturels et des résultats clés sur l’état de l’exposition physique aux dangers naturels au Canada est fourni dans le rapport suivant de la Commission géologique du Canada : \n
+          Un résumé détaillé de la façon dont le « modèle d’exposition physique » a été produit et de l’information sur ses applications à l’évaluation des risques de dangers naturels et des résultats clés sur l’état de l’exposition physique aux dangers naturels au Canada est fourni dans le rapport suivant de la Commission géologique du Canada : 
 
-          Journeay, M., LeSueur, P., Chow, C., and Wagner, W. Physical Exposure to Natural Hazards in Canada. Geological Survey of Canada, OpenFile 8892. https://doi.org/10.4095/330012. \n
+          Journeay, M., LeSueur, P., Chow, C., and Wagner, W. Physical Exposure to Natural Hazards in Canada. Geological Survey of Canada, OpenFile 8892. https://doi.org/10.4095/330012. 
 
           Nous recommandons à toute personne ayant l’intention d’utiliser les ensembles de données de consulter cette documentation.
   acceptable:
