@@ -35,11 +35,9 @@ datasets:
     fr: Tissu social
   description:
     en: |
-        The Social Vulnerability component of the National Human Settlement Layer (NHSL) includes information about broad spatial patterns of social vulnerability at the neighbourhood scale, and indicators about the capacities for a community to withstand and recover from disaster events based on intrinsic characteristics of housing, family structure, individual autonomy and financial agency.\n
-        Information in the model provides a means of comparing relative levels of social vulnerability from one region to another across Canada and helps to identify specific dimensions within a community that contributes to their relative levels of social vulnerability. This information is not intended for site-specific study, but instead to understand broad patterns of social characteristics and vulnerability across multiple census dissemination areas.
+        The Social Vulnerability component of the National Human Settlement Layer (NHSL) includes information about broad spatial patterns of social vulnerability at the neighbourhood scale, and indicators about the capacities for a community to withstand and recover from disaster events based on intrinsic characteristics of housing, family structure, individual autonomy and financial agency.
     fr: |
-        L’élément « Vulnérabilité sociale » de la couche ZPN comprend des renseignements sur les grandes tendances spatiales en matière de vulnérabilité sociale à l’échelle du quartier, ainsi que des indicateurs sur la capacité d’une collectivité à résister aux catastrophes, et à s’en rétablir, en fonction des caractéristiques intrinsèques du logement, de la structure familiale, de l’autonomie individuelle et des systèmes financiers.\n
-        Les renseignements contenus dans le modèle permettent de comparer les niveaux relatifs de vulnérabilité sociale d’une région à l’autre partout au Canada et aident à déterminer les dimensions particulières d’une collectivité qui contribuent à ses niveaux relatifs de vulnérabilité sociale. Ces renseignements ne sont pas destinés à une étude particulière à un site, mais plutôt à comprendre les grands schémas des caractéristiques sociales et de la vulnérabilité dans plusieurs zones de diffusion du recensement.
+        L’élément « Vulnérabilité sociale » de la couche ZPN comprend des renseignements sur les grandes tendances spatiales en matière de vulnérabilité sociale à l’échelle du quartier, ainsi que des indicateurs sur la capacité d’une collectivité à résister aux catastrophes, et à s’en rétablir, en fonction des caractéristiques intrinsèques du logement, de la structure familiale, de l’autonomie individuelle et des systèmes financiers.   
   documentation:
     title:
       en: Documentation
@@ -63,9 +61,9 @@ datasets:
       fr: Une note sur l'utilisation acceptable
     body:
       en: |
-          _insert acceptable use text_
+          Information in the model provides a means of comparing relative levels of social vulnerability from one region to another across Canada and helps to identify specific dimensions within a community that contributes to their relative levels of social vulnerability. This information is not intended for site-specific study, but instead to understand broad patterns of social characteristics and vulnerability across multiple census dissemination areas.
       fr: |
-          _insérer le texte sur l'utilisation acceptable_
+          Les renseignements contenus dans le modèle permettent de comparer les niveaux relatifs de vulnérabilité sociale d’une région à l’autre partout au Canada et aident à déterminer les dimensions particulières d’une collectivité qui contribuent à ses niveaux relatifs de vulnérabilité sociale. Ces renseignements ne sont pas destinés à une étude particulière à un site, mais plutôt à comprendre les grands schémas des caractéristiques sociales et de la vulnérabilité dans plusieurs zones de diffusion du recensement.
   id: nhsl_social_fabric_indicators
   folder: social-fabric
   header:
