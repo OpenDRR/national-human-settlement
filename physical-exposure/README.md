@@ -12,7 +12,9 @@ In total, the model characterizes 35.2 million people in 9.7 million buildings a
 
 ## Documentation
 
-A detailed summary of how the physical exposure model was generated, information it’s applications to natural hazards risk assessment, and key findings about the status of physical exposure to natural hazards in Canada is provided within the following Geological Survey of Canada Open File Report: Journeay, M., LeSueur, P., Chow, C., and Wagner, W. Physical Exposure to Natural Hazards in Canada. Geological Survey of Canada, OpenFile XXX.
+A detailed summary of how the physical exposure model was generated, information it’s applications to natural hazards risk assessment, and key findings about the status of physical exposure to natural hazards in Canada is provided within the following Geological Survey of Canada Open File Report:  
+
+Journeay, M., LeSueur, P., Chow, C., and Wagner, W. Physical Exposure to Natural Hazards in Canada. Geological Survey of Canada, OpenFile 8892. https://doi.org/10.4095/330012.
 
 We recommend that anyone who intends to use the datasets review this documentation. 
 
