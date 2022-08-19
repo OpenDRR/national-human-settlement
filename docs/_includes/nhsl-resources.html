@@ -49,7 +49,13 @@
     {% if dataset.id contains include.layer%}
         {% for resource in dataset.resources %}
             {% if resource.link contains 'http' %}
-                {% assign download_link = resource.link %}
+                {% if resource.link contains 'geo-api' %}
+                    {% capture download_link %}
+                    {{resource.link}}_{{site.data.nhsl.apiVersion}}{% if resource.language == 'fr' %}?lang=fr-CA{% endif %}
+                    {% endcapture %}
+                {% else %}
+                    {% assign download_link = resource.link %}
+                {% endif %}
             {% else %}
                 {% capture download_link %}
                 {{site.github.releases_url}}/download/{{site.github.releases[0].tag_name}}/{{resource.link}}
