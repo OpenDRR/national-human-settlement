@@ -10,7 +10,7 @@ This repository is used for the development of the National Human Settlement Lay
 
 Information is currently disseminated in the Physical Exposure and Social Fabric components of the NHSL. The Physical Exposure component includes a delineation of settled areas and related land use across Canada, as well as information about buildings, persons, and building replacement values (structure and contents) within those areas. The Social Fabric component of the NHSL includes information about broad spatial patterns of social vulnerability at the neighbourhood scale, and indicators about the capacities for a community to withstand and recover from disaster events based on characteristics of housing, family structure, individual autonomy and financial agency.
 
-The Geological Survey of Canada, through the Public Safety Geoscience Program, has developed these datasets. Please direct any questions about the NHSL layers to Philip LeSueur at philip.lesueur@canada.ca or Nicky Hastings at nicky.hastings@canada.ca.
+The Geological Survey of Canada, through the Public Safety Geoscience Program, has developed these datasets. Please direct any questions about the NHSL layers to Philip LeSueur at philip.lesueur@nrcan-rncan.gc.ca or Nicky Hastings at nicky.hastings@nrcan-rncan.gc.ca.
 
 
 ### Available Datasets
