@@ -10,7 +10,7 @@ Ce dépôt est utilisé pour la création de la couche des zones de peuplement a
 
 Les renseignements sont actuellement diffusés dans les éléments « exposition physique » et « tissu social » de la couche ZPN. L’élément « exposition physique » délimite les régions habitées de l’ensemble du Canada et l’utilisation du sol dans ces régions, en plus d’inclure des renseignements sur les bâtiments, la population et les valeurs de remplacement des bâtiments (structure et contenu). L’élément « tissu social » comprend des renseignements sur les grandes tendances spatiales en matière de vulnérabilité sociale à l’échelle du quartier, ainsi que des indicateurs sur la capacité d’une collectivité à résister aux catastrophes, et à s’en rétablir, en fonction des caractéristiques du logement, de la structure familiale, de l’autonomie individuelle et des systèmes financiers.
 
-La Commission géologique du Canada, dans le cadre du programme Géoscience pour la sécurité publique, a élaboré ces ensembles de données. Veuillez adresser toute question concernant la couche ZPN à Philip LeSueur à philip.lesueur@canada.ca ou à Nicky Hastings à nicky.hastings@canada.ca.
+La Commission géologique du Canada, dans le cadre du programme Géoscience pour la sécurité publique, a élaboré ces ensembles de données. Veuillez adresser toute question concernant la couche ZPN à Philip LeSueur à philip.lesueur@nrcan-rncan.gc.ca ou à Nicky Hastings à nicky.hastings@nrcan-rncan.gc.ca.
 
 
 ### Ensembles de données disponibles

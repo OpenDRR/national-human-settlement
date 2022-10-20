@@ -111,4 +111,9 @@ color: #FF0000;
 background-color: #FFCCCC;
 }
 
+.PDF {
+color: #f90;
+background-color: #ffff00;
+}
+
 .ab, .bc, .mb, .ns, .nl, .qc, .on, .nu, .yt, .nt, .sk, .pe, .nb, .rgn { display:none; }

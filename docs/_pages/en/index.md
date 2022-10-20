@@ -1,7 +1,7 @@
 ---
 authorName: Natural Resources Canada
 authorUrl:
-dateModified: 2021-07-26
+dateModified: 2022-10-19
 pageclass: wb-prettify all-pre
 subject:
   en: [GV Government and Politics, Government services]
@@ -98,9 +98,8 @@ breadcrumbs:
   {% endfor %}
   </div>
 
-  <h3>Data Resources</h3>
-
-  <div id={{ layer }}>
+  <div id={{ layer }} class="col-md-12">
+    <h3>Data Resources</h3>
     {% include nhsl-resources.html lang = page.lang layer = layer %}
   </div>
 
