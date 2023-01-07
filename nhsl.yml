@@ -480,7 +480,7 @@ datasets:
     type: Document
   - format: PDF
     language: en-fr
-    link: nhsl_physical_exposure_OF8902.pdf
+    link: nhsl_physical_exposure_OF8892.pdf
     name: Physical Exposure Full Report
     region: ca
     type: Document
