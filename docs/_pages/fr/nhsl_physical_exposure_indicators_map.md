@@ -1,7 +1,7 @@
 ---
 authorName: Natural Resources Canada
 authorUrl:
-dateModified: 2021-07-26
+dateModified: 2025-01-21
 noContentTitle: true
 pageclass: wb-prettify all-pre
 subject:
@@ -70,7 +70,7 @@ crossorigin=""></script>
 	});
 
 	var natural_hazards_building_exposure_model = L.esri.featureLayer({
-		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_fr/MapServer/7',
+		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/physical_exposure_fr/MapServer/0',
 		simplifyFactor: 0.25,
 		precision: 5,
     minZoom: 10,
@@ -95,7 +95,7 @@ crossorigin=""></script>
   });
 
 	var landuse = L.esri.featureLayer({
-		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_fr/MapServer/8',
+		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/physical_exposure_en/MapServer/1',
 		simplifyFactor: 0.25,
 		precision: 5,
     minZoom: 10,
@@ -118,79 +118,6 @@ crossorigin=""></script>
 		showAttributes( e, landuse );
   });
 
-  var population_density = L.esri.featureLayer({
-		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_fr/MapServer/9',
-		simplifyFactor: 0.25,
-		precision: 5,
-    minZoom: 10,
-		fields: [ 'OBJECTID', 'Et_PopNight___E_AreaHa' ]
-  }).on( 'load', function ( e ) {
-		this.metadata( function ( error, metadata ) {
-			buildLegend( metadata );
-		});
-		$( '#modal' ).remove();
-	}).on( 'loading', function ( e ) {
-		$( '#map' ).before( '<div id="modal"></div>' );
-	}).bindPopup( function ( layer ) {
-    	return L.Util.template( '<p>Densité de population: <strong>{Et_PopNight___E_AreaHa}</strong></p>', layer.feature.properties );
-  }).on('add', function ( e ) {
-    if ( oldId && oldLayer) {
-		  $( '#sidebar' ).html( '' );
-      oldLayer.resetFeatureStyle( oldId );
-    }
-  }).on('click', function ( e ) {
-		showAttributes( e, population_density );
-  });
-
-  var building_assets_per_hectare = L.esri.featureLayer({
-		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_fr/MapServer/10',
-		simplifyFactor: 0.25,
-		precision: 5,
-    minZoom: 10,
-		fields: [ 'OBJECTID', 'Et_AssetValue___E_AreaHa' ]
-  }).on( 'load', function ( e ) {
-		this.metadata( function ( error, metadata ) {
-			buildLegend( metadata );
-		});
-		$( '#modal' ).remove();
-	}).on( 'loading', function ( e ) {
-		$( '#map' ).before( '<div id="modal"></div>' );
-	}).bindPopup( function ( layer ) {
-    	var assetval =  L.Util.template( '{Et_AssetValue___E_AreaHa}', layer.feature.properties );
-      return '<p>Patrimoine immobilier par hectare: <strong>' + formatter.format(assetval) + '</strong></p>';
-  }).on('add', function ( e ) {
-    if ( oldId && oldLayer) {
-		  $( '#sidebar' ).html( '' );
-      oldLayer.resetFeatureStyle( oldId );
-    }
-  }).on('click', function ( e ) {
-		showAttributes( e, building_assets_per_hectare );
-  });
-
-	var building_density = L.esri.featureLayer({
-		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_fr/MapServer/11',
-		simplifyFactor: 0.25,
-		precision: 5,
-    minZoom: 10,
-		fields: [ 'OBJECTID', 'Et_BldgNum___E_AreaHa' ]
-	}).on( 'load', function ( e ) {
-		this.metadata( function ( error, metadata ) {
-			buildLegend( metadata );
-		});
-		$( '#modal' ).remove();
-	}).on( 'loading', function ( e ) {
-		$( '#map' ).before( '<div id="modal"></div>' );
-	}).bindPopup( function ( layer ) {
-    return L.Util.template( '<p>Densité de construction: <strong>{Et_BldgNum___E_AreaHa}</strong></p>', layer.feature.properties );
-  }).on('add', function ( e ) {
-    if ( oldId && oldLayer) {
-		  $( '#sidebar' ).html( '' );
-      oldLayer.resetFeatureStyle( oldId );
-    }
-  }).on('click', function ( e ) {
-		showAttributes( e, building_density );
-  });
-
   var map = L.map( 'map', {
     fullscreenControl: true,
     center: [ 49.2827, -123.1207 ],
@@ -209,10 +136,7 @@ crossorigin=""></script>
 
   var overlays = {
     'Utilisation des terres': landuse,
-    'Densité de Population': population_density,
-    'Actifs de construction par hectare': building_assets_per_hectare,
-    'Densité de construction': building_density,
-    // 'Modèle d\'exposition des bâtiments aux risques naturels': natural_hazards_building_exposure_model
+    // 'Modèle d’exposition des bâtiments aux risques naturels': natural_hazards_building_exposure_model
   };
 
   L.control.layers( overlays, null, { collapsed: false } ).addTo( map );
