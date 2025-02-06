@@ -9,27 +9,32 @@ jobs:
     name: Check for broken links
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       - name: Set up Ruby
-        uses: ruby/setup-ruby@477b21f02be01bcb8030d50f37cfec92bfa615b6
+        uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.6
+          ruby-version: '3.3'
           bundler-cache: true
 
-      - run: |
+      - name: Run "bundle install"
+        run: |
           cd docs
           bundle install
+
+      - name: Build site with Jekyll
+        run: |
+          cd docs
           jekyll build
 
       - name: Link Checker
-        uses: lycheeverse/lychee-action@v1.1.0
+        uses: lycheeverse/lychee-action@v2
         with:
           args: ./docs/_site/* -b https://opendrr.github.io --exclude https://opendrr.github.io/assets/fontawesome/css/all.min.css
       
       - name: Add comment if broken links
         if: ${{ github.event_name == 'pull_request' && hashFiles('./lychee/out.md') != '' }}
-        uses: actions/github-script@v3
+        uses: actions/github-script@v7
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
@@ -45,4 +50,3 @@ jobs:
         run: |
             less ./lychee/out.md
             exit 1
-            
