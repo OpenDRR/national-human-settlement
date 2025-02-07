@@ -103,6 +103,8 @@ breadcrumbs:
     {% include nhsl-resources.html lang = page.lang layer = layer %}
   </div>
 
+  <br clear="both">
+
 {% endfor %}
 
 {% assign var_length = variables.size | minus: 3 %}
