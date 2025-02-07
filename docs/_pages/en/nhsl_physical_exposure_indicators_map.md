@@ -17,11 +17,11 @@ breadcrumbs:
   - title: "OpenDRR"
     link: "https://www.github.com/OpenDRR/"
   - title: "OpenDRR Downloads"
-    link: "../downloads/en"
+    link: "../downloads/en/"
   - title: "Human Settlement and Natural Hazards in Canada"
-    link: "/en/"
+    link: "en/"
   - title: "Physical Exposure"
-    link: "/en/index#nhsl_physical_exposure_indicators-a"
+    link: "en/#nhsl_physical_exposure_indicators-a"
 ---
 <!-- Load Leaflet from CDN -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"

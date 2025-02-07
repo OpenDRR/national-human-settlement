@@ -7,7 +7,7 @@ The Physical Exposure Layer component of the National Human Settlement Layer (NH
 The Social Vulnerability component of the National Human Settlement Layer (NHSL) includes information about broad spatial patterns of social vulnerability at the neighbourhood scale, and indicators about the capacities for a community to withstand and recover from disaster events based on intrinsic characteristics of housing, family structure, individual autonomy and financial agency.
 These datasets have been developed to provide information about physical exposure and social vulnerability across Canada that can be used for quantitative risk assessment of natural hazards. The purpose is to support implementation of the Sendai Framework for Disaster Risk Reduction at the local, regional, and national scales. The information is not intended for use in site-specific studies.
 
-https://opendrr.github.io/national-human-settlement/en
+https://opendrr.github.io/national-human-settlement/en/
 
 ## Getting Started
 
@@ -52,7 +52,7 @@ L’élément Exposition physique de la couche ZPN délimite les régions habit
 L’élément Vulnérabilité sociale de la couche ZPN comprend des renseignements sur les grandes tendances spatiales en matière de vulnérabilité sociale à l’échelle du quartier, ainsi que des indicateurs sur la capacité d’une collectivité à résister aux catastrophes, et à s’en rétablir, en fonction des caractéristiques intrinsèques du logement, de la structure familiale, de l’autonomie individuelle et des systèmes financiers.
 Ces ensembles de données ont été élaborés pour fournir des renseignements sur l’exposition physique et la vulnérabilité sociale à travers le Canada qui peuvent être utilisés pour l’évaluation quantitative des risques naturels. L’objectif de ces ensembles de données consiste à appuyer la mise en œuvre du Cadre de Sendai pour la réduction des risques de catastrophe à l’échelle locale, régionale et nationale. L’information n’est pas destinée à être utilisée dans le cadre d’études propres à des sites.
 
-https://opendrr.github.io/national-human-settlement/fr
+https://opendrr.github.io/national-human-settlement/fr/
 
 ## Démarrage
 

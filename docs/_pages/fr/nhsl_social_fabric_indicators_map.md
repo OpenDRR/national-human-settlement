@@ -18,11 +18,11 @@ breadcrumbs:
   - title: "OpenDRR"
     link: "https://www.github.com/OpenDRR/"
   - title: "Téléchargements de OpenDRR"
-    link: "../downloads/fr"
+    link: "../downloads/fr/"
   - title: "Zones de peuplement et dangers naturels au Canada"
-    link: "/fr"
+    link: "fr/"
   - title: "Tissu social et seuils de capacité"
-    link: "/fr/index#nhsl_social_fabric_indicators-a"
+    link: "fr/#nhsl_social_fabric_indicators-a"
 ---
 <!-- Load Leaflet from CDN -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
