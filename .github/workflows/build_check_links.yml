@@ -1,4 +1,4 @@
-name: Check for dead links on github pages
+name: Check for dead links on GitHub Pages
 
 on:
   pull_request:
@@ -9,40 +9,27 @@ jobs:
     name: Check for broken links
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@477b21f02be01bcb8030d50f37cfec92bfa615b6
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
         with:
-          ruby-version: 2.6
-          bundler-cache: true
-
-      - run: |
-          cd docs
-          bundle install
-          jekyll build
+          source: ./docs
+          destination: ./docs/_site
 
       - name: Link Checker
-        uses: lycheeverse/lychee-action@v1.1.0
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
         with:
-          args: ./docs/_site/* -b https://opendrr.github.io --exclude https://opendrr.github.io/assets/fontawesome/css/all.min.css
-      
-      - name: Add comment if broken links
-        if: ${{ github.event_name == 'pull_request' && hashFiles('./lychee/out.md') != '' }}
-        uses: actions/github-script@v3
-        with:
-          github-token: ${{secrets.GITHUB_TOKEN}}
-          script: |
-            github.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: 'Broken links found, please check actions log.'
-            })
+          args: --verbose --no-progress --exclude '^https://www\.canada\.ca/' --fallback-extensions html 'docs/_site/**/*.html'
+          fail: false
 
-      - name: Display broken links and exit
-        if: hashFiles('./lychee/out.md') != ''
-        run: |
-            less ./lychee/out.md
-            exit 1
-            
+      - name: Create Issue From File
+        if: steps.lychee.outputs.exit_code >= 2
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: Link Checker Report
+          content-filepath: ./lychee/out.md
+          labels: report, automated issue

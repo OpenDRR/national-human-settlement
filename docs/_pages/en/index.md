@@ -1,14 +1,14 @@
 ---
 authorName: Natural Resources Canada
 authorUrl:
-dateModified: 2022-10-19
+dateModified: 2025-01-21
 pageclass: wb-prettify all-pre
 subject:
   en: [GV Government and Politics, Government services]
   fr: [GV Gouvernement et vie politique, Services gouvernementaux]
 title: Human Settlement and Natural Hazards in Canada
 lang: en
-altLangPage: ../fr
+altLangPage: ../fr/
 nositesearch: true
 nomenu: true
 nofooter: true
@@ -16,7 +16,7 @@ breadcrumbs:
   - title: "OpenDRR"
     link: "https://www.github.com/OpenDRR/"
   - title: "OpenDRR Downloads"
-    link: "../downloads/en"
+    link: "../downloads/en/"
   - title: "Human Settlement and Natural Hazards in Canada"
 ---
 <link href='../assets/css/app.css' rel='stylesheet'/>
@@ -102,6 +102,8 @@ breadcrumbs:
     <h3>Data Resources</h3>
     {% include nhsl-resources.html lang = page.lang layer = layer %}
   </div>
+
+  <br clear="both">
 
 {% endfor %}
 

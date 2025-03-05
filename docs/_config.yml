@@ -17,6 +17,8 @@ exclude:
 - SECURITY.md
 - CNAME
 - "*.tmp"
+- api-publique.md
+- docker-compose.yml
 - Gemfile
 - Gemfile.lock
 - gcweb-jekyll.gemspec
@@ -196,13 +198,13 @@ defaults:
           fr: Applications mobiles
         tmpl-menu-footer-communications-mobile-link:
           en: https://www.canada.ca/en/mobile.html
-          fr: ttps://www.canada.ca/fr/mobile.html
+          fr: https://www.canada.ca/fr/mobile.html
         tmpl-menu-footer-communications-about-text:
           en: About Canada.ca
           fr: À propos de Canada.ca
         tmpl-menu-footer-communications-about-link:
-          en: https://www1.canada.ca/en/newsite.html
-          fr: https://www1.canada.ca/fr/nouveausite.html
+          en: https://www.canada.ca/en/government/about.html
+          fr: https://www.canada.ca/fr/gouvernement/a-propos.html
         tmpl-menu-footer-communications-terms-text:
           en: Terms and conditions
           fr: Avis

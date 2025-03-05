@@ -1,7 +1,7 @@
 ---
 authorName: Natural Resources Canada
 authorUrl:
-dateModified: 2021-07-26
+dateModified: 2025-01-21
 noContentTitle: true
 pageclass: wb-prettify all-pre
 subject:
@@ -17,11 +17,11 @@ breadcrumbs:
   - title: "OpenDRR"
     link: "https://www.github.com/OpenDRR/"
   - title: "OpenDRR Downloads"
-    link: "../downloads/en"
+    link: "../downloads/en/"
   - title: "Human Settlement and Natural Hazards in Canada"
-    link: "/en/"
+    link: "en/"
   - title: "Social Fabric and Capacity Thresholds"
-    link: "/en/index#nhsl_social_fabric_indicators-a"
+    link: "en/#nhsl_social_fabric_indicators-a"
 ---
 <!-- Load Leaflet from CDN -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
@@ -69,7 +69,7 @@ crossorigin=""></script>
 	});
 
 	var total_social_vulnerability_score = L.esri.featureLayer({
-		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_en/MapServer/1',
+		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/social_fabric_en/MapServer/0',
 		simplifyFactor: 0.25,
 		precision: 5,
     minZoom: 10,
@@ -92,102 +92,6 @@ crossorigin=""></script>
 		showAttributes( e, total_social_vulnerability_score );
   	});
 
-	var financial_agency_score = L.esri.featureLayer({
-		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_en/MapServer/2',
-		simplifyFactor: 0.25,
-		precision: 5,
-    minZoom: 10,
-		fields: [ 'OBJECTID', 'VEt_Score' ]
-	}).on( 'load', function ( e ) {
-		this.metadata( function ( error, metadata ) {
-			buildLegend( metadata );
-		});
-		$( '#modal' ).remove();
-	}).on( 'loading', function ( e ) {
-		$( '#map' ).before( '<div id="modal"></div>' );
-	}).bindPopup( function ( layer ) {
-    	return L.Util.template( '<p>Financial agency score: <strong>{VEt_Score}</strong></p>', layer.feature.properties );
-	}).on('add', function ( e ) {
-    	if ( oldId && oldLayer) {
-		  $( '#sidebar' ).html( '' );
-      	  oldLayer.resetFeatureStyle( oldId );
-    	}
-  	}).on('click', function ( e ) {
-		showAttributes( e, financial_agency_score );
-  	});
-
-    var housing_condition_score = L.esri.featureLayer({
-		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_en/MapServer/3',
-		simplifyFactor: 0.25,
-		precision: 5,
-    minZoom: 10,
-		fields: [ 'OBJECTID', 'VHt_Score' ]
-  	}).on( 'load', function ( e ) {
-		this.metadata( function ( error, metadata ) {
-			buildLegend( metadata );
-		});
-		$( '#modal' ).remove();
-	}).on( 'loading', function ( e ) {
-		$( '#map' ).before( '<div id="modal"></div>' );
-	}).bindPopup( function ( layer ) {
-    	return L.Util.template( '<p>Housing condition score: <strong>{VHt_Score}</strong></p>', layer.feature.properties );
-	}).on('add', function ( e ) {
-    	if ( oldId && oldLayer) {
-		  $( '#sidebar' ).html( '' );
-      	  oldLayer.resetFeatureStyle( oldId );
-    	}
-  	}).on('click', function ( e ) {
-		showAttributes( e, housing_condition_score );
-  	});
-
-    var social_connectivity_score = L.esri.featureLayer({
-		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_en/MapServer/4',
-		simplifyFactor: 0.25,
-		precision: 5,
-    minZoom: 10,
-		fields: [ 'OBJECTID', 'VFt_Score' ]
-  	}).on( 'load', function ( e ) {
-		this.metadata( function ( error, metadata ) {
-			buildLegend( metadata );
-		});
-		$( '#modal' ).remove();
-	}).on( 'loading', function ( e ) {
-		$( '#map' ).before( '<div id="modal"></div>' );
-	}).bindPopup( function ( layer ) {
-    	return L.Util.template( '<p>Social connectivity score: <strong>{VFt_Score}</strong></p>', layer.feature.properties );
-	}).on('add', function ( e ) {
-    	if ( oldId && oldLayer) {
-		  $( '#sidebar' ).html( '' );
-      	  oldLayer.resetFeatureStyle( oldId );
-    	}
-  	}).on('click', function ( e ) {
-		showAttributes( e, social_connectivity_score );
-  	});
-
-	var individual_autonomy_score = L.esri.featureLayer({
-		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_en/MapServer/5',
-		simplifyFactor: 0.25,
-		precision: 5,
-    minZoom: 10,
-		fields: [ 'OBJECTID', 'VAt_Score' ]
-	}).on( 'load', function ( e ) {
-		this.metadata( function ( error, metadata ) {
-			buildLegend( metadata );
-		});
-		$( '#modal' ).remove();
-	}).on( 'loading', function ( e ) {
-		$( '#map' ).before( '<div id="modal"></div>' );
-	}).bindPopup( function ( layer ) {
-    	return L.Util.template( '<p>Individual autonomy score: <strong>{VAt_Score}</strong></p>', layer.feature.properties );
-	}).on('add', function ( e ) {
-    	if ( oldId && oldLayer) {
-		  $( '#sidebar' ).html( '' );
-      	  oldLayer.resetFeatureStyle( oldId );
-    	}
-  	}).on('click', function ( e ) {
-		showAttributes( e, individual_autonomy_score );
-  	});
-
   var map = L.map( 'map', {
     fullscreenControl: true,
     center: [ 49.2827, -123.1207 ],
@@ -206,10 +110,6 @@ crossorigin=""></script>
 
   var overlays = {
     'Total Social Vulnerability Score': total_social_vulnerability_score,
-    'Financial Agency Score': financial_agency_score,
-    'Housing Condition Score': housing_condition_score,
-    'Social Connectivity Score': social_connectivity_score,
-    'Individual Autonomy Score': individual_autonomy_score
   };
 
   L.control.layers( overlays, null, { collapsed: false } ).addTo( map );
